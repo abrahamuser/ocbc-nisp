@@ -1,0 +1,23 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_action": [
+      "mn.act.new",
+      "mn.act.print",
+      "mn.act.notes",
+      "mn.act.tmpl.new",
+      "mn.act.tmpl.view",
+      "mn.act.cancel",
+      "mn.act.tmpl.delete",
+      "mn.act.edit",
+      "mn.act.view",
+      "mn.act.audit",
+      "mn.act.tmpl.edit",
+      "mn.act.submit",
+      "mn.act.tmpl.new_pymt",
+      "btn.act.add_offline_auth",
+      "mn.act.delete"
+    ]
+  }
+}

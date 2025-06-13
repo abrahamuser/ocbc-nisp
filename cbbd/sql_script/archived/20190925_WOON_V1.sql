@@ -1,0 +1,10 @@
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'GFT','General Fund Transfer','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'OP','Online Payment','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'GBFT','Velocity V1 - General Fund Transfer','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLIDR','Bulk Payment IDR','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLIDRGB','Velocity V1 - Bulk Payment IDR','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLFCY','Bulk Payment Foreign','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLFCYGB','Velocity V1 - Bulk Payment Foreign','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'TON','Etax Upload Online','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'TOF','Etax Upload Batch','TRANXUPLOADFORMAT','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'VA','VA Member Upload','TRANXUPLOADFORMAT','A');

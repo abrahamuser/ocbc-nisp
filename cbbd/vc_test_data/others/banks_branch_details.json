@@ -1,0 +1,22 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "bank_list": [
+      {
+        "bank_code": "012",
+        "bank_name": "Bank BCA",
+        "branch_name": "Branch A",
+        "address_1": "street 1",
+        "address_2": "street 2",
+        "address_3": "street 3",
+        "country_code": "ID",
+        "province_code": "5501",
+        "city_code": "1222",
+        "city_name": "city name",
+        "network_clearing_code": "NCC001"
+      }
+    ],
+    "total_rows": 5
+  }
+}

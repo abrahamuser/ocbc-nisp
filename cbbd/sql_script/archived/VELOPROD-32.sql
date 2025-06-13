@@ -1,0 +1,10 @@
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='VM.0023';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='8101';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='8401';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='8501';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10103';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10104';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10105';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10107';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10108';
+UPDATE mleb_mcb.access_restriction SET menu_parent_id = '0' WHERE menu_id='10110';

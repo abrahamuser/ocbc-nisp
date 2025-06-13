@@ -1,0 +1,3 @@
+INSERT INTO MLEB_MCB.MESSAGE_PROPERTIES (message_id, create_by, create_dt, err_message_code, status) VALUES (MLEB_MCB.MESSAGEPROPERTIES_ID.nextval, 'system', SYSDATE, 'LABEL_OTHER_AMOUNT', 'ACTIVE');
+INSERT INTO MLEB_MCB.MESSAGE_PROPERTIES_I18N (row_id, create_by, create_dt, err_message, err_message_code, language_code) VALUES (MLEB_MCB.MESSAGEPROPERTIESI18N_ID.nextval, 'system', SYSDATE, 'Other Amount', 'LABEL_OTHER_AMOUNT', 'en');
+INSERT INTO MLEB_MCB.MESSAGE_PROPERTIES_I18N (row_id, create_by, create_dt, err_message, err_message_code, language_code) VALUES (MLEB_MCB.MESSAGEPROPERTIESI18N_ID.nextval, 'system', SYSDATE, 'Jumlah Lain', 'LABEL_OTHER_AMOUNT', 'in');

@@ -1,0 +1,42 @@
+CREATE TABLE
+    MLEB_MCB.TNC
+    (
+        ROW_ID NUMBER(10) NOT NULL,
+        PRODUCT_KEY VARCHAR2(255 CHAR),
+        TNC_URL VARCHAR2(255 CHAR),
+        FOOTER VARCHAR2(4000 CHAR),
+        LOCALE VARCHAR2(5 CHAR),
+        PRIMARY KEY (ROW_ID)
+    );
+
+CREATE SEQUENCE  "MLEB_MCB"."TNC_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE;
+CREATE INDEX "MLEB_MCB"."ind_tnc_product_key" ON "MLEB_MCB"."TNC" ("PRODUCT_KEY" ASC);
+
+CREATE TABLE
+    MLEB_MCB.TNC_CHECKBOX
+    (
+        ROW_ID NUMBER(10) NOT NULL,
+        PRODUCT_KEY VARCHAR2(255 CHAR),
+        SEQ_NO NUMBER(10),
+        CONTENT VARCHAR2(4000 CHAR),
+        LOCALE VARCHAR2(5 CHAR),
+        PRIMARY KEY (ROW_ID)
+    );
+CREATE SEQUENCE  "MLEB_MCB"."TNC_CHECKBOX_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE;
+CREATE INDEX "MLEB_MCB"."ind_tnc_checkbox_product_key" ON "MLEB_MCB"."TNC_CHECKBOX" ("PRODUCT_KEY" ASC);
+
+ALTER TABLE mleb_mcb.device_profile ADD (biometric_key VARCHAR(255));
+ALTER TABLE mleb_mcb.unbind_device_profile ADD (biometric_key VARCHAR(255));
+
+DELETE FROM MLEB_MCB.TNC WHERE PRODUCT_KEY = 'BIOENR';
+INSERT INTO MLEB_MCB.TNC (ROW_ID, PRODUCT_KEY, TNC_URL, FOOTER, LOCALE) VALUES (MLEB_MCB.TNC_ID.nextval, 'BIOENR', '/home/oracle/ocbc/apps/tnc/BIOENR.html', 'text/html', 'EN');
+INSERT INTO MLEB_MCB.TNC (ROW_ID, PRODUCT_KEY, TNC_URL, FOOTER, LOCALE) VALUES (MLEB_MCB.TNC_ID.nextval, 'BIOENR', '/home/oracle/ocbc/apps/tnc/BIOENR_IN.html', 'text/html', 'IN');
+
+DELETE FROM MLEB_MCB.TNC_CHECKBOX WHERE PRODUCT_KEY = 'BIOENR';
+INSERT INTO MLEB_MCB.TNC_CHECKBOX (ROW_ID, CONTENT, LOCALE, PRODUCT_KEY, SEQ_NO) values (MLEB_MCB.TNC_CHECKBOX_ID.nextval, 'I have read, understand, and agree to the Product Terms & Conditions', 'EN', 'BIOENR', 1);
+INSERT INTO MLEB_MCB.TNC_CHECKBOX (ROW_ID, CONTENT, LOCALE, PRODUCT_KEY, SEQ_NO) values (MLEB_MCB.TNC_CHECKBOX_ID.nextval, 'Saya telah membaca, memahami, dan menyetujui Syarat & Ketentuan Produk', 'IN', 'BIOENR', 1);
+
+
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) 
+SELECT mleb_mcb.GeneralCode_id.nextval, 'VM.0017', 'Biometric', 'menuAccess', 'X' FROM MLEB_MCB.generalcode 
+WHERE ROWNUM=1 AND NOT EXISTS(SELECT gncode FROM MLEB_MCB.generalcode WHERE gncode_type = 'menuAccess' AND gncode='VM.0017');

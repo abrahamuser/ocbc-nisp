@@ -1,0 +1,27 @@
+<Msg>
+<Header>
+        <SC_TransType>620021</SC_TransType>
+        <SC_ApplName>IBKH</SC_ApplName>
+        <SC_ApplID>IBKH</SC_ApplID>
+        <SC_ApplTransID>%APPTRANSID%</SC_ApplTransID>
+        <SC_TransDate>%TRANSDATE%</SC_TransDate>
+        <SC_TransTime>%TRANSTIME%</SC_TransTime>
+        <SC_TransUserID>%TRANSUSERID%</SC_TransUserID>
+        <SC_TransUserInfo>%TRANSUSERINFO%</SC_TransUserInfo>
+        <SC_ApplUserID>%APPUSERID%</SC_ApplUserID>
+		<SC_TellerID>%TELLERID%</SC_TellerID>
+		<SC_BranchCode>%BRANCHCODE%</SC_BranchCode>
+		<SC_CtrlUnit>%CTRLUNIT%</SC_CtrlUnit>
+</Header>
+<Body><REL_EARMARK>
+<Request>
+<JournalSequence>%JOURNALSEQUENCE_6%</JournalSequence>
+<AccNo>%ACCNO_19%</AccNo>
+<AccType>%ACCTYPE_1%</AccType>
+<TransAmt>%TRANSAMT_17_2%</TransAmt>
+<SeqNo>%SEQNO_19%</SeqNo>
+<CurrCode>%CURRCODE_4%</CurrCode>
+<IBInd>%IBIND_3%</IBInd>
+</Request>
+</REL_EARMARK></Body>
+</Msg>

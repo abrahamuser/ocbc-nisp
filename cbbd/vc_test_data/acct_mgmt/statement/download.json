@@ -1,0 +1,7 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "doc_path": "http://localhost:8080/ccmcb/test.pdf"
+  }
+}

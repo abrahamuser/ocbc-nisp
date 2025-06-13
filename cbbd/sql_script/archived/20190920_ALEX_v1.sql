@@ -1,0 +1,1 @@
+UPDATE mleb_mcb.access_restriction SET ROLE_VALIDATE=1, ROLE_TYPE='SB_SGLACC' WHERE MENU_ID='5100';

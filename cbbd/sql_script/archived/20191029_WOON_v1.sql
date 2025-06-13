@@ -1,0 +1,26 @@
+DELETE mleb_mcb.GENERALCODE WHERE GNCODE_TYPE = 'TRANXPRODCODE_IN';
+
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'ASI','Sweep In Rekening','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLFCY','Pembayaran Bulk Valuta Asing','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLFCYGB','Velocity V1 - Pembayaran Bulk Valuta Asing','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLIDR','Pembayaran Bulk IDR','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'BLIDRGB','Velocity V1 - Pembayaran Bulk IDR','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'BPM','Pembayaran Tagihan','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'CSWTH','Penarikan Tunai','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'ETAX','Pembayaran Pajak','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'IFT','Transfer Dana ke OCBC NISP','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'LLG','LLG/SKN','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'OAT','Transfer Dana ke Rekening Sendiri','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'OLT','Transfer Online','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'ONFX','Online FX','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'PYFCY','Pembayaran Bulk Payroll Valuta Asing ','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'PYIDR','Pembayaran Bulk Payroll IDR','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'RTGS','RTGS','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'SPFCY','Pembayaran Bulk Supplier Valuta Asing','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'SPIDR','Pembayaran Bulk Supplier IDR','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'TDAM','Pemeliharaan Rekening Deposito','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'TDAO','Pembukaan Rekening Deposito','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'TOF','E-Tax Upload Batch','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'TON','E-Tax Upload Online','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'TT','Transfer Valuta Asing','TRANXPRODCODE_IN','A');
+INSERT INTO mleb_mcb.GENERALCODE (row_id,GNCODE,GNCODE_DESCRIPTION,GNCODE_TYPE,STATUS) VALUES (mleb_mcb.GeneralCode_id.nextval,'VA','Unggah Anggota VA','TRANXPRODCODE_IN','A');

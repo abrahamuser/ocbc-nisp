@@ -1,0 +1,54 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_holiday_product": [
+      {
+        "id": "b76d7f65-2d1b-45d5-b06c-c8df54fc7bef",
+        "holiday_type": "PH",
+        "prod_cd": "ONFX",
+        "from_ccy": "MYR| SGD| JPY| CHF| CNY| AUD| HKD| IDR| USD| NZD| EUR| GBP| CAD",
+        "dest_ccy": "IDR",
+        "dest_country": "ID",
+        "dest_prov_id": "6200| 3100| 3300| 0200| 7200| 5800| 3500| 1200| 7400| 8200| 5100| 3700| 5300| 3900| 6100| 3200| 0100| 6300| 7100| 8800| 3400| 0300| 8100| 0500| 3600| 6900| 6000| 2300| 5400| 0900",
+        "cross_ccy": false
+      },
+      {
+        "id": "5d0fca0a-fc33-4fb8-9c5b-df147e40d7a2",
+        "holiday_type": "WK",
+        "prod_cd": "ONFX",
+        "from_ccy": "MYR| SGD| JPY| CHF| CNY| AUD| HKD| IDR| USD| NZD| EUR| GBP| CAD",
+        "dest_ccy": "IDR",
+        "dest_country": "ID",
+        "dest_prov_id": "6200| 3100| 3300| 0200| 7200| 5800| 3500| 1200| 7400| 8200| 5100| 3700| 5300| 3900| 6100| 3200| 0100| 6300| 7100| 8800| 3400| 0300| 8100| 0500| 3600| 6900| 6000| 2300| 5400| 0900",
+        "cross_ccy": false
+      },
+      {
+        "id": "b76d7f65-2d1b-45d5-b06c-c8df54fc7bef",
+        "holiday_type": "CAL",
+        "prod_cd": "ONFX",
+        "calendar_date": "2019-06-03",
+        "from_ccy": "MYR| SGD| JPY| CHF| CNY| AUD| HKD| IDR| USD| NZD| EUR| GBP| CAD",
+        "dest_ccy": "IDR",
+        "dest_country": "ID",
+        "dest_prov_id": "6200| 3100| 3300| 0200| 7200| 5800| 3500| 1200| 7400| 8200| 5100| 3700| 5300| 3900| 6100| 3200| 0100| 6300| 7100| 8800| 3400| 0300| 8100| 0500| 3600| 6900| 6000| 2300| 5400| 0900",
+        "cross_ccy": false,
+        "desc_id": "Commons leave",
+        "desc_en": "Cuti bersama"
+      },
+      {
+        "id": "14c7144a-ef03-4069-8ac6-5814dab8af05",
+        "holiday_type": "CAL",
+        "prod_cd": "ONFX",
+        "calendar_date": "2019-06-04",
+        "from_ccy": "MYR| SGD| JPY| CHF| CNY| AUD| HKD| IDR| USD| NZD| EUR| GBP| CAD",
+        "dest_ccy": "IDR",
+        "dest_country": "ID",
+        "dest_prov_id": "6200| 3100| 3300| 0200| 7200| 5800| 3500| 1200| 7400| 8200| 5100| 3700| 5300| 3900| 6100| 3200| 0100| 6300| 7100| 8800| 3400| 0300| 8100| 0500| 3600| 6900| 6000| 2300| 5400| 0900",
+        "cross_ccy": false,
+        "desc_id": "Commons leave",
+        "desc_en": "Cuti bersama"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "trx_data": {
+      "pymt_master_id": "fc63d636-24d6-4908-8a5c-ae3d0ab24846",
+      "prod_cd": "BP",
+      "bank_ref": "BVONFX15266161619",
+      "customer_ref": "15266161619",
+      "debit_acct_no": "010800001900",
+      "debit_acct_ccy": "IDR",
+      "billing_id": "010800004813",
+      "billing_org_name": "Electric",
+      "value_date": "2019-05-25",
+      "amount": "25500.00",
+      "amount_ccy": "USD",
+      "trx_status": "012",
+      "fx_type": "C",
+      "fx_rate": "15730.0000000",
+      "version": "1"
+    },
+    "error_message": ""
+  }
+}

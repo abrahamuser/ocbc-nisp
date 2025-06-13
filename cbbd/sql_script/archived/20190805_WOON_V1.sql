@@ -1,0 +1,1 @@
+update mleb_mcb.generalcode set gncode_description = '2' where gncode='maxDeviceBinding' and status='A';

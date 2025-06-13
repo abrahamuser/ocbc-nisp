@@ -1,0 +1,24 @@
+ALTER TABLE mleb_mcb.access_restriction RENAME COLUMN "VALIDATE" TO ACCESS_VALIDATE;
+ALTER TABLE mleb_mcb.access_restriction ADD ROLE_VALIDATE NUMBER(1) DEFAULT 0;
+ALTER TABLE mleb_mcb.access_restriction ADD ROLE_TYPE VARCHAR(255) NULL;
+ALTER TABLE mleb_mcb.access_restriction ADD MENU_VALIDATE NUMBER(1) DEFAULT 0;
+ALTER TABLE mleb_mcb.access_restriction ADD BLOCK_VALIDATE NUMBER(1) DEFAULT 0;
+
+TRUNCATE TABLE "MLEB_MCB"."ACCESS_RESTRICTION";
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('10217','VM.0006','Authorize Transaction',0,0,NULL,1,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5100','VM.0006','Fund Transfer',0,0,'SB_LGLACC',1,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5101','VM.0003','Internal Transfer',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5102','VM.0003','Own Transfer',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5103','VM.0004','RTGS',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5104','VM.0004','LLG',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5105','VM.0004','Online Transfer',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5200','VM.0006','Online Payment',0,0,NULL,1,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5201','5200','BPM',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('5202','5200','ETAX',1,0,NULL,1,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('9101','0','My Account',0,0,NULL,1,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0001','VM.0006','Online FX',0,1,'SB_FXTRAN',0,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0002','0','Open New Account',0,0,NULL,0,1);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0003','5100','OCBC NISP Transfer',0,0,NULL,0,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0004','5100','Domestic',0,0,NULL,0,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0005','5100','Telegraphic Transfer',0,0,NULL,0,0);
+INSERT INTO mleb_mcb.access_restriction (menu_id, menu_parent_id,menu_description, access_validate, role_validate, role_type, menu_validate, block_validate) VALUES ('VM.0006','0','Transaction',0,0,NULL,0,0);

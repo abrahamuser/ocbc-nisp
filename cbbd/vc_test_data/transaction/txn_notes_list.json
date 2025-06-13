@@ -1,0 +1,24 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_txn_notes": [
+      {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "created_by": "usr01",
+        "created_by_name": "User name 1",
+        "date_created": "2019-05-25",
+        "pymt_master_id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "remark": "Remark 1"
+      },
+	  {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "created_by": "usr01",
+        "created_by_name": "User name 1",
+        "date_created": "2019-05-25",
+        "pymt_master_id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "remark": "Remark 1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+UPDATE MLEB_MCB.MESSAGE_PROPERTIES_I18N SET err_message = 'Maaf, status token anda terblokir sementara. Silakan hubungi bank untuk membuka blokir token anda.' WHERE err_message_code = 'omni.O0090' AND language_code = 'IN';
+UPDATE MLEB_MCB.MESSAGE_PROPERTIES_I18N SET err_message = 'Sorry, your token status is permanently blocked. Please contact the bank to unblock your token.' WHERE err_message_code = 'omni.O0090' AND language_code = 'EN';

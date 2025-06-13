@@ -1,0 +1,68 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_audit": [
+      {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "usr_cd": "USR01",
+        "usr_name": "User name 1",
+        "timestamp": "2019-05-25",
+        "action": "Action 1",
+        "remark": "Remark 2"
+      },
+	  {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "usr_cd": "USR01",
+        "usr_name": "User name 2",
+        "timestamp": "2019-05-25",
+        "action": "Action 1",
+        "remark": "Remark 2"
+      }
+    ],
+    "list_auth_list": [
+      {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "is_seq": true,
+        "next_auth": "next authorizer 1",
+        "list_detail": [
+          {
+        	"id": "detail_id_1",
+        	"weight": 1,
+        	"auth_profile_id": "Auth profile id 1",
+        	"auth_date": "2019-05-25",
+        	"auth_by": "Auth by 1"
+      	  },
+      	  {
+        	"id": "detail_id_2",
+        	"weight": 1,
+        	"auth_profile_id": "Auth profile id 2",
+        	"auth_date": "2019-05-25",
+        	"auth_by": "Auth by 2"
+      	  }
+        ]
+      },
+	  {
+        "id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "is_seq": true,
+        "next_auth": "next authorizer 2",
+        "list_detail": [
+          {
+        	"id": "detail_id_1",
+        	"weight": 1,
+        	"auth_profile_id": "Auth profile id 1",
+        	"auth_date": "2019-05-25",
+        	"auth_by": "Auth by 1"
+      	  },
+      	  {
+        	"id": "detail_id_2",
+        	"weight": 1,
+        	"auth_profile_id": "Auth profile id 2",
+        	"auth_date": "2019-05-25",
+        	"auth_by": "Auth by 2"
+      	  }
+        ]
+      }
+    ]
+  }
+}

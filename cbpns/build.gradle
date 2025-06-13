@@ -1,0 +1,145 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+compileJava.options.encoding='UTF-8'
+
+
+
+task entityJar(type: Jar) {
+   	baseName = 'pex-entity'
+	from(sourceSets.main.output) {
+        include "com/silverlake/hlb/pex/entity/**"
+    }
+}
+
+task libJar(type: Jar) {
+   	baseName = 'pns'
+	from(sourceSets.main.output) {
+        include "com/silverlake/mleb/pex/bean/**"
+        include "com/silverlake/mleb/pex/constant/**"
+        include "com/silverlake/mleb/pns/bean/**"
+        include "com/silverlake/mleb/pns/constant/**"
+    }
+}
+
+
+
+war {
+
+    baseName = 'pns'
+    version =  ''
+    rootSpec.exclude('**/PExServer.class')
+}
+
+
+task ws(type: War) {
+
+    baseName = 'pex_ws'
+    version =  ''
+    manifest {
+		attributes ('DisableIBMJAXWSEngine':'true','Build-Time-ISO-8601': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"))
+		
+	}
+    from "WebContent" 
+    
+  	rootSpec.exclude("**/hlb/pex/task/**")
+
+    rootSpec.exclude("**/hlb/pns/task/**")
+
+    rootSpec.rename("log4j2.xml","temp.xml")
+    rootSpec.rename("pexwslog.xml","log4j2.xml")
+        
+   
+        
+   
+    
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+
+
+
+
+dependencies {
+
+	compile("org.springframework:spring-webmvc:4.1.8.RELEASE")
+    compile("org.springframework:spring-web:4.1.8.RELEASE")
+    compile ("org.springframework:spring-jms:4.1.8.RELEASE")
+    compile("jstl:jstl:1.2")
+	compile ("org.springframework.data:spring-data-jpa:1.8.0.RELEASE")
+	compile ("org.apache.cxf:cxf-rt-frontend-jaxws:2.7.17")
+	compile ("org.apache.cxf:cxf-rt-transports-http:2.7.17")
+	compile ("org.apache.cxf:cxf-rt-ws-security:2.7.17")
+	
+	compile ("org.apache.logging.log4j:log4j-api: 2.3")
+    compile ("org.apache.logging.log4j:log4j-core:2.3")
+    compile ("com.caucho:hessian:4.0.38")
+    compile ("net.sf.ehcache:ehcache:2.10.0")
+    compile ("com.google.code.gson:gson:2.5")
+    compile ("org.apache.ws.security:wss4j:1.6.18")
+    compile ("commons-codec:commons-codec:1.10")
+    compile ('org.apache.commons:commons-lang3:3.0')
+    compile ('net.sf.dozer:dozer:5.5.1')
+    compile ('javax.xml:jaxrpc-api:1.1')
+    //compile ('axis:axis:1.4')
+    compile ('com.itextpdf:itextpdf:5.5.8')
+    compile ('com.jcraft:jsch:0.1.53')
+    compile ('commons-net:commons-net:3.4')
+    compile ('commons-vfs:commons-vfs:1.0')
+    compile ('commons-io:commons-io:2.4')
+    compile ('com.googlecode.json-simple:json-simple:1.1')
+    compile ('commons-codec:commons-codec:1.10')
+	compile fileTree("lib")
+	
+	providedCompile fileTree("ibm")
+   	providedCompile ("javax.servlet:servlet-api:2.5")
+   	//providedCompile ("org.hibernate:hibernate-entitymanager:4.2.21.Final")
+	//providedCompile ("org.hibernate:hibernate-entitymanager:4.3.7.Final")
+	providedCompile ("org.hibernate:hibernate-entitymanager:3.6.10.Final")
+	
+	//providedCompile fileTree("$baseProject/WebContent/WEB-INF/lib")
+	//providedCompile files("$baseProject/MPEx-entity-v1.0.jar")
+   	//providedCompile fileTree("gradlelib")
+   	//providedCompile ("org.hibernate:hibernate-entitymanager:3.6.7.Final")
+   	//providedCompile ("org.apache.axis:axis:1.4")
+	//providedCompile ("javax.xml.rpc:javax.xml.rpc-api:1.1")
+
+	
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+
+}
+
+
+
+sourceSets.main.java.srcDirs = [ "src" ]
+sourceSets.main.resources.srcDirs = [ "build/" ]
+sourceSets.main.resources.includes = [ "**/*.xml","**/*.properties"]
+sourceSets.main.resources.excludes = [ "classes" ]
+project.buildDir = 'build_target'
+
+war {
+	manifest {
+		attributes ('DisableIBMJAXWSEngine':'true','Build-Time-ISO-8601': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"))
+		
+	}
+    from "WebContent" // adds a file-set to the root of the archive
+    rootSpec.exclude("**/hlb/pex/server/socket/**")
+   
+}
+
+
+
+
+

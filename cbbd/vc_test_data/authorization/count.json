@@ -1,0 +1,20 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "pending_auth_count_list": [
+      {
+        "menu_item_id": "5100",
+        "count": 5
+      },
+	  {
+        "menu_item_id": "5300",
+        "count": 4
+      },
+	  {
+        "menu_item_id": "5400",
+        "count": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+  	"total_records": 3,
+    "bene_list": [
+      {			
+        "record_id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef12",
+        "account_number": "040800002491",
+        "account_currency": "IDR",
+        "account_name": "NAME1 292",
+		"bene_address1": "address 1",
+		"bene_address2": "address 2",
+		"bene_address3": "address 3",
+        "bank_code": "012",
+        "bank_name": "Bank Nation",
+		"bank_country_code": "IDN",
+        "province_code": "prov code",
+        "city_code": "city code"
+      },
+      {
+        "record_id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef13",
+        "nick_name": "My Fav Nick",
+        "account_number": "040800002492",
+        "account_currency": "IDR",
+        "account_name": "NAME1 492",
+        "bene_address1": "address 1",
+		"bene_address2": "address 2",
+		"bene_address3": "address 3",
+        "bank_code": "012",
+        "bank_name": "Bank Nation",
+		"bank_country_code": "IDN",
+        "province_code": "prov code",
+        "city_code": "city code"
+      },
+      {
+        "record_id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef14",
+        "org_cd": "CASECASE",
+        "account_number": "040800005432",
+        "account_currency": "USD",
+        "account_name": "NAME1 432",
+        "bene_address1": "address 1",
+		"bene_address2": "address 2",
+		"bene_address3": "address 3",
+        "bank_code": "012",
+        "bank_name": "Bank Nation",
+		"bank_country_code": "IDN",
+        "province_code": "prov code",
+        "city_code": "city code"
+      }
+    ]
+  }
+}

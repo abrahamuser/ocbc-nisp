@@ -1,0 +1,47 @@
+/********************/
+/* GENERAL SETTINGS */
+/********************/
+body {
+    background-color: #FFFFFF;
+/*    font-size: 16px; */
+    font-size: normal;
+    color: rgb(0,33,71);
+	font-family:'arial';
+     text-align:justify;
+       text-justify:inter-word;
+
+}
+
+li{   
+list-style-type: none;
+   font-size: large;
+   color: darkblue;
+  }
+
+span{   
+   font-size: smaller;
+   color: black;
+}
+
+.clear {
+    clear: both;
+}
+ul {
+list-style-type: none;
+    padding: 0;
+}
+xx{ 
+list-style-type: none;
+    text-align:justify;
+
+}
+
+
+table.tftable {font-size:normal;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+table.tftable th {font-size:normal;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+table.tftable tr {background-color:#ffffff;}
+table.tftable td {font-size:normal;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+
+td{
+padding:8px; 
+}

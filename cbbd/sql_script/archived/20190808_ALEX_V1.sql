@@ -1,0 +1,4 @@
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'ID','Individual','PURPOSE_LIST_EN','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'ID','Individu','PURPOSE_LIST_IN','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BS','Buisness','PURPOSE_LIST_EN','A');
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'BS','Bisnis','PURPOSE_LIST_IN','A');

@@ -1,0 +1,32 @@
+<Msg>
+<Header>
+        <SC_TransType>620001</SC_TransType>
+        <SC_ApplName>IBKH</SC_ApplName>
+        <SC_ApplID>IBKH</SC_ApplID>
+        <SC_ApplTransID>%APPTRANSID%</SC_ApplTransID>
+        <SC_TransDate>%TRANSDATE%</SC_TransDate>
+        <SC_TransTime>%TRANSTIME%</SC_TransTime>
+        <SC_TransUserID></SC_TransUserID>
+        <SC_TransUserInfo></SC_TransUserInfo>
+        <SC_ApplUserID>%APPUSERID%</SC_ApplUserID>
+		<SC_TellerID>%TELLERID%</SC_TellerID>
+		<SC_BranchCode>%BRANCHCODE%</SC_BranchCode>
+		<SC_CtrlUnit>%CTRLUNIT%</SC_CtrlUnit>
+</Header>
+<Body><FT>
+<Request>
+<JournalSequence>%JOURNALSEQUENCE_6%</JournalSequence>
+<DebitingAccount>%DEBACCOUNT_19%</DebitingAccount>
+<DebAccType>%DEBACCTYPE_1%</DebAccType>
+<CreditingAmt>%CREAMT_17_2%</CreditingAmt>
+<CreditingAccount>%CREACCOUNT_19%</CreditingAccount>
+<CreAccType>%CREACCTYPE_1%</CreAccType>
+<AuxBranchCode>%AUXBRANCHCODE_19%</AuxBranchCode>
+<DebitingAmt>%DEBAMOUNT_17_2%</DebitingAmt>
+<CurrCode>%CURRCODE_4%</CurrCode>
+<DebitAccCurr>%DEBACCCURR_4%</DebitAccCurr>
+<WtdFee>%WTDFEE_17_2%</WtdFee>
+</Request>
+<Response></Response>
+</FT></Body>
+</Msg>

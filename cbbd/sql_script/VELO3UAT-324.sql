@@ -1,0 +1,1 @@
+UPDATE mleb_mcb.access_restriction_trx SET IS_CANCEL='Y' WHERE SOURCE_CODE = 'BL' AND STATUS = '011';

@@ -1,0 +1,36 @@
+<Msg>
+<Header>
+        <SC_TransType>270103</SC_TransType>
+        <SC_ApplName>MOBMY</SC_ApplName>
+        <SC_ApplID>MOBMY</SC_ApplID>
+        <SC_ApplTransID>%APPTRANSID%</SC_ApplTransID>
+        <SC_TransDate>%TRANSDATE%</SC_TransDate>
+        <SC_TransTime>%TRANSTIME%</SC_TransTime>
+        <SC_TransUserID></SC_TransUserID>
+        <SC_TransUserInfo></SC_TransUserInfo>
+        <SC_ApplUserID>%APPUSERID%</SC_ApplUserID>
+		<SC_TellerID>%TELLERID%</SC_TellerID>
+		<SC_BranchCode>%BRANCHCODE%</SC_BranchCode>
+		<SC_CtrlUnit>%CTRLUNIT%</SC_CtrlUnit>
+		<SC_OCMUSER>%OCMUSER%</SC_OCMUSER>
+</Header>
+<Body><IBFT>
+<Request>
+<JournalSequence>%JOURNALSEQUENCE_6%</JournalSequence>
+<CCNo>%CCNO_25%</CCNo>
+<FromAccType>%FROMACCTYPE_2%</FromAccType>
+<DebAccNo>%DEBACCNO_25%</DebAccNo>
+<TranName>%TRANNAME_26%</TranName>
+<TranAmt>%TRANAMT_13_2%</TranAmt>
+<FeeAmt>%FEEAMT_5_2%</FeeAmt>
+<TRefNo>%TREFNO_40%</TRefNo>
+<BeneBkRoute>%BENEBKROUTE_10%</BeneBkRoute>
+<AbvBeneBk>%ABVBENEBK_10%</AbvBeneBk>
+<BeneAccNo>%BENEACCNO_25%</BeneAccNo>
+<BeneAccType>1</BeneAccType>
+<TotAmt>%TOTAMT_13_2%</TotAmt>
+<PRefNo>%PREFNO_40%</PRefNo>
+</Request>
+<Response></Response>
+</IBFT></Body>
+</Msg>

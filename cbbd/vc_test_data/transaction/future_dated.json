@@ -1,0 +1,25 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_trx": [
+      {
+        "pymt_master_id": "6bb88355-975c-469f-8685-412dea5d9eda",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT152661616191",
+        "customer_ref": "152661616191",
+        "debit_acct_no": "010800001900",
+        "debit_acct_ccy": "IDR",
+        "sender_name": "ALIASNAME1 203",
+        "bene_acct_no": "010800003021",
+        "bene_acct_ccy": "IDR",
+        "value_date": "2019-05-25",
+        "amount": "520000.00",
+        "amount_ccy": "IDR",
+        "trx_status": "005",
+        "version": "1"
+      }
+    ],
+    "total_rows": "1"
+  }
+}

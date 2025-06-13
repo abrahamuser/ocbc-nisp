@@ -1,0 +1,35 @@
+<persistence  
+     xmlns="http://java.sun.com/xml/ns/persistence"  
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"  
+     version="1.0">
+
+
+  	<!-- transaction-type="RESOURCE_LOCAL"  -->
+ 	<persistence-unit name="db_mleb" transaction-type="RESOURCE_LOCAL" >
+ 
+    
+      
+ 
+ 	
+     <provider>org.hibernate.ejb.HibernatePersistence</provider>
+     <!-- <non-jta-data-source>java:/comp/env/jdbc/mleb</non-jta-data-source> -->
+     <non-jta-data-source>jdbc/mleb</non-jta-data-source>
+     <properties>
+     <property name="hibernate.hbm2ddl.auto" value="update"/>
+     <property name="hibernate.show_sql" value="false" />  
+     <property name="hibernate.connection.charSet" value="UTF-8"/>
+     <property name="hibernate.default_schema" value="mleb_mcb"/>
+   <!--  <property name="hibernate.dialect" value="${hb.dialect}" /> -->
+     <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" /> 
+     </properties>
+ 
+</persistence-unit>
+
+
+  
+</persistence>
+
+
+
+  

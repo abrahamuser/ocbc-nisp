@@ -1,0 +1,1 @@
+UPDATE mleb_mcb.generalcode SET GNCODE_DESCRIPTION='https://play.google.com/store/apps/details?id=com.sme.ocbcnisp.corporatebanking' WHERE GNCODE_TYPE='redirectUrl' AND GNCODE='about_us_android';

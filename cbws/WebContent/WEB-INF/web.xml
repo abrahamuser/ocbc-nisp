@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<display-name>OCBC@CCMCB</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	
+	
+  
+  	<!-- <session-config>
+    <session-timeout>2</session-timeout>
+   	</session-config> -->
+  
+    <listener>
+    <listener-class>com.silverlake.mleb.ccmcb.listerner.SessionListener</listener-class>
+    </listener>
+  
+  
+  
+	  <servlet>
+			<servlet-name>mvc-dispatcher</servlet-name>
+			<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+			<init-param>
+		       <param-name>contextConfigLocation</param-name>
+		       <param-value>/WEB-INF/mvc-dispatcher-servlet.xml</param-value>
+		   	</init-param>
+			<load-on-startup>1</load-on-startup>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>mvc-dispatcher</servlet-name>
+			<url-pattern>/web/*</url-pattern>
+		</servlet-mapping>
+   
+  
+  
+  
+   <servlet>
+   	<servlet-name>CXFServlet</servlet-name>
+   	<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+   	<init-param>
+      <param-name>config-location</param-name>
+      <param-value>/WEB-INF/applicationContext.xml</param-value>
+  	</init-param>
+  	
+	<init-param><param-name>static-resources-list</param-name>
+	   <param-value>
+	   /FAQ_cambodia_en.html
+	   /FAQ_cambodia_kh.html
+	   /js/jquery-1.4.2.min.js
+	   /js/scripts.js
+	   /css/style.css
+	   /css/style3.css
+	    /img/Register1_en.jpg
+	   /img/Register1_vn.jpg
+	   /img/Register2_en.jpg
+	   /img/Register2_vn.jpg
+	   /img/mobile_os.png
+	   </param-value>
+	 </init-param>
+   <load-on-startup>2</load-on-startup>
+   </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>CXFServlet</servlet-name>
+   <url-pattern>/ws/*</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   <filter>
+    <filter-name>webFilter</filter-name>
+    <filter-class>com.silverlake.mleb.ccmcb.listerner.WebFilterListener</filter-class>
+	</filter>
+
+	<filter-mapping>
+    <filter-name>webFilter</filter-name>
+    <url-pattern>/ws/*</url-pattern>
+	</filter-mapping>
+   
+   </web-app>

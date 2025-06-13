@@ -1,0 +1,6 @@
+CREATE TABLE MLEB_MCB.REG_CACHE_DATA ( 
+rec_id VARCHAR2(50) NOT NULL, 
+reg_obj BLOB,
+signer_obj BLOB,
+create_dt TIMESTAMP,
+PRIMARY KEY (rec_id) );

@@ -1,0 +1,117 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.silverlake.mleb" >
+		<context:exclude-filter type="regex" expression="com.silverlake.mleb.pex.task.*"/>
+		<context:exclude-filter type="regex" expression="com.silverlake.mleb.pns.task.*"/>
+	</context:component-scan> 
+
+		<import resource="classpath:META-INF/jpa.xml"/>
+		
+		<task:scheduler id="taskScheduler" pool-size="50"/>
+    <task:executor id="taskExecutor"  pool-size="2000" />
+    <task:annotation-driven executor="taskExecutor" scheduler="taskScheduler"/>
+    
+    <bean id="mapper" class="org.dozer.DozerBeanMapper">
+	  <property name="mappingFiles">
+	    <list>
+	      <value>dozerBeanMapping.xml</value>            
+	    </list>
+	  </property>
+	  <property name="customFieldMapper" ref="dozerCustomFieldMapper">         
+	  </property>
+	</bean>
+	<bean id="dozerCustomFieldMapper" class="com.silverlake.mleb.pex.util.HibernateFieldMapper" />
+
+	
+	<!-- <jaxws:endpoint id="PExWSServices" implementor="#PExImpl" address="/PExWSServices">
+		<jaxws:inInterceptors>
+			<bean class="org.apache.cxf.binding.soap.saaj.SAAJInInterceptor" />
+			<ref bean="myServiceInterceptor"/>
+		</jaxws:inInterceptors>
+		<jaxws:properties>
+			<entry key="ws-security.ut.validator" value-ref="PEXWSValidator"/>
+		</jaxws:properties>
+	</jaxws:endpoint> -->
+	
+	<jaxws:endpoint id="PNWSServices" implementor="#PNImpl" address="/PNWSServices">
+		<!-- <jaxws:inInterceptors>
+			<bean class="org.apache.cxf.binding.soap.saaj.SAAJInInterceptor" />
+			<ref bean="myServiceInterceptor"/>
+		</jaxws:inInterceptors>
+		<jaxws:properties>
+			<entry key="ws-security.ut.validator" value-ref="PEXWSValidator"/>
+		</jaxws:properties> -->
+	</jaxws:endpoint>
+	
+	
+	<bean id="myServiceInterceptor"   class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+	 <constructor-arg>                              
+	 <map>
+	    <entry key="action" value="UsernameToken" />
+	    <entry key="passwordType" value="PasswordText" />
+	  </map>          
+	</constructor-arg>
+	</bean>
+	
+	
+	<bean id="PEXWSValidator" class="com.silverlake.mleb.pex.server.webservice.PExWSValidator"/>
+	
+	<bean id="PNImpl" class="com.silverlake.mleb.pex.server.webservice.PNImpl" />
+	
+  	<bean id="PExImpl" class="com.silverlake.mleb.pex.server.webservice.PExImpl" /> 
+	
+	<!-- <bean id="mqConnectionFactory" class="com.ibm.mq.jms.MQQueueConnectionFactory">
+	    <property name="hostName" value="10.3.14.19"/>
+	    <property name="port" value="1426"/>
+	    <property name="queueManager" value="EAIPRDQM5"/>
+	    <property name="transportType" value="1"/>
+	    <property name="channel" value="MOBMY.EAI"/> 
+	</bean> -->
+	
+   <!--            
+	<bean id="mqConnectionFactory" class="com.ibm.mq.jms.MQQueueConnectionFactory">
+	    <property name="hostName" value="10.3.14.19"/>
+	    <property name="port" value="1426"/>
+	    <property name="queueManager" value="EAIPRDQM5"/>
+	    <property name="transportType" value="1"/>
+	    <property name="channel" value="MOBMY.EAI"/> 
+	</bean>
+	
+		JMS Queue Connection Factory
+	<bean id="jmsQueueConnectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+	    	            
+	    <property name="targetConnectionFactory" ref="mqConnectionFactory"/>
+	</bean>
+	
+	
+	<bean name="requestMessageQueue" class="org.springframework.jms.core.JmsTemplate">
+			<property name="connectionFactory" ref="jmsQueueConnectionFactory" />
+			<property name="receiveTimeout" value="30000" />
+			<property name="destinationResolver" ref="jmsDestResolver" />
+			<property name="pubSubDomain" value="false"/>
+	</bean>
+	
+	<bean name="responseMessageQueue" class="org.springframework.jms.core.JmsTemplate">
+			<property name="connectionFactory" ref="jmsQueueConnectionFactory" />
+			<property name="receiveTimeout" value="60000" />
+			<property name="destinationResolver" ref="jmsDestResolver" />
+			<property name="pubSubDomain" value="false"/>
+	</bean>  
+   	
+   	
+   <bean id="jmsDestResolver" class="org.springframework.jms.support.destination.DynamicDestinationResolver"/>  -->
+		<!-- <bean id="jmsDestResolver" class="org.springframework.jms.support.destination.JndiDestinationResolver"/>-->
+	
+</beans>

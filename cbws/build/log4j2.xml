@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [%t] %C{2}:%L - %m%n"/>
+        </Console>
+        
+       
+    	
+    	<RollingFile name="logfile" fileName="${sys:app.log.path}/ccmcb.log"
+                filePattern="${sys:app.log.path}/$${date:yyyy-MM}/ccmcb-%d{yyyy-MM-dd}.log.gz">
+		    <PatternLayout>
+		      <Pattern>%d %-5p [%t] %C{2}:%L - %m%n</Pattern>
+		    </PatternLayout>
+		    <Policies>
+		      <TimeBasedTriggeringPolicy />
+		    </Policies>
+    	</RollingFile>
+    	
+    </Appenders>
+ 
+    
+    
+    
+    <Loggers>
+	   <Root level="info">
+	     <AppenderRef ref="logfile"/>
+         <AppenderRef ref="${sys:log.show.console}"/>
+	   </Root>
+  	</Loggers>
+    
+    
+    
+   
+</Configuration>

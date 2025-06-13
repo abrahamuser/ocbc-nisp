@@ -1,0 +1,3 @@
+app.store.path=D:/appServer/apache-tomcat-ocbc/apps
+app.log.path=D:/appServer/apache-tomcat-ocbc/logs
+log.show.console=stdout

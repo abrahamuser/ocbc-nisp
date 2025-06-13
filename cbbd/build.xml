@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name = "copy2server" default="copy" basedir=".">
+	<property file="ant.properties"/>
+	<target name="copy" depends="">
+			<exec executable="cmd">
+			    <arg line="/c gradle clean build libJar"/>
+  			</exec>
+
+
+		<copy todir="${tomcatWebapp}">
+			<fileset file="build_target\libs\*.war" />
+		</copy>
+		
+		<copy todir="${ccwsProject}">
+					<fileset file="build_target\libs\*.jar" />
+		</copy>
+		
+		<!--<scp trust="true" file="build_target\libs\mib.war" todir="root:z6bn7y@172.23.136.186:/mleb/tomcat/apache-tomcat-7.0.64/webapps/"/>-->
+		<!--<scp trust="true" file="build_target\libs\mib.war" todir="root:Passw0rd@192.168.1.2:/mml/apache-tomcat-7.0.64/webapps/"/>-->
+	</target>
+	
+	
+
+	
+</project>

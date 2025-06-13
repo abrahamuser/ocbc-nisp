@@ -1,0 +1,21 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_push_notif": [
+      {
+        "id": "1e9f82c9-a048-46f9-b7fc-cd26a97111ce",
+        "device_id": "0051a99e-1e7a-4588-bc6c-741744b002aa",
+        "notif_subject": "Push Notif Example",
+        "notif_message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+	  {
+        "id": "2e9f82c9-a048-46f9-b7fc-cd26a97111ce",
+        "device_id": "2051a99e-1e7a-4588-bc6c-741744b002aa",
+        "notif_subject": "Push Notif Example 2",
+        "notif_message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ],
+    "total_rows": "2"
+  }
+}

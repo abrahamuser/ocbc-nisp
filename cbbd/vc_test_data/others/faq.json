@@ -1,0 +1,30 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_faq": [
+      {
+        "id": "Faq1",
+        "cat_cd": "2",
+        "cat_desc_en": "New Year 2019",
+        "cat_desc_id": "Tahun Baru 2019",
+		"title_en": "Question",
+        "title_id": "Soalan",
+        "content_en": "Holiday",
+        "content_id": "Cuti",
+		"seq": "3"
+      },
+      {
+		"id": "Faq1",
+        "cat_cd": "2",
+        "cat_desc_en": "New Year 2019",
+        "cat_desc_id": "Tahun Baru 2019",
+		"title_en": "Question",
+        "title_id": "Soalan",
+        "content_en": "Holiday",
+        "content_id": "Cuti",
+		"seq": "4"
+      }
+    ]
+  }
+}

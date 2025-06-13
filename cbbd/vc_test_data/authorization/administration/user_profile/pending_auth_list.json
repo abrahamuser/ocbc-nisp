@@ -1,0 +1,30 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "user_profile_list": [
+      {
+        "profile_cd": "sampleCode123",
+        "profile_desc": "sampleDescription123",
+        "profile_record_id": "sampleRecord123",
+		"version":1,
+		"maintenance_type": "sampleData",
+		"auth_status_code": "sampleData",
+		"auth_status": "sampleData",
+		"pending_record_id": "sampleData"
+         
+      },
+	  {
+        "profile_cd": "sampleCode456",
+        "profile_desc": "sampleDescription456",
+        "profile_record_id": "sampleRecord456",
+		"version":1,
+		"maintenance_type": "sampleData",
+		"auth_status_code": "sampleData",
+		"auth_status": "sampleData",
+		"pending_record_id": "sampleData"
+      } 
+    ],
+    "total_records": "2"
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "org_cd": "CASECASE",
+    "usr_cd": "SGL_A",
+    "usr_id": "624ac31a-843c-42d2-83a5-812ca848a6cc",
+    "usr_name": "SINGLE ACCESS 1",
+    "usr_domain": "SB",
+    "org_addr1": "org address 1",
+    "org_addr2": "org address 2",
+    "org_addr3": "org address 3",
+	"phone":"291203293912",
+    "email": "ester.herliana@devteam.net",
+    "list_role": [
+      {
+        "role_cd": "SB_SGLACC",
+        "role_base": "SB_SGLACC",
+        "role_desc": "Single Access (Maker and Auth)"
+      },
+      {
+        "role_cd": "SB_PAYVERF",
+        "role_base": "SB_PAYVERF",
+        "role_desc": "Payment Verifier"
+      },
+      {
+        "role_cd": "SB_PAYAUTH",
+        "role_base": "SB_PAYAUTH",
+        "role_desc": "Payment Authorizer"
+      },
+      {
+        "role_cd": "SB_STMTVWR",
+        "role_base": "SB_STMTVWR",
+        "role_desc": "Statement Viewer"
+      },
+      {
+        "role_cd": "SB_REPTVWR",
+        "role_base": "SB_REPTVWR",
+        "role_desc": "General Report Viewer"
+      },
+      {
+        "role_cd": "SB_TRXREPTVWR",
+        "role_base": "SB_TRXREPTVWR",
+        "role_desc": "Transaction Report Viewer"
+      }
+    ],
+    "session_id": "2172C0BBFB0A7FD3B71FE4B0B28AF95C",
+    "user_status": "US001",
+    "user_state": "TE001",
+    "menu_access_list": [
+      {
+        "menu_id": "1000",
+        "menu_title": "General Info",
+        "menu_item_list": [
+          {
+            "menu_item_id": "1100",
+            "has_child": "Y",
+            "menu_item_title": "Bank List",
+            "menu_parent_id": "1000"
+          },
+          {
+            "menu_item_id": "1101",
+            "has_child": "N",
+            "menu_item_title": "Telegraphic Transfer",
+            "menu_parent_id": "1100"
+          },
+          {
+            "menu_item_id": "1102",
+            "has_child": "N",
+            "menu_item_title": "Interbank",
+            "menu_parent_id": "1100"
+          },
+          {
+            "menu_item_id": "1103",
+            "has_child": "N",
+            "menu_item_title": "Online Transfer",
+            "menu_parent_id": "1100"
+          },
+          {
+            "menu_item_id": "1200",
+            "has_child": "Y",
+            "menu_item_title": "Billing Organization List",
+            "menu_parent_id": "1000"
+          },
+          {
+            "menu_item_id": "1201",
+            "has_child": "N",
+            "menu_item_title": "Billing Organization List",
+            "menu_parent_id": "1200"
+          },
+          {
+            "menu_item_id": "1300",
+            "has_child": "Y",
+            "menu_item_title": "Currency Info",
+            "menu_parent_id": "1000"
+          },
+          {
+            "menu_item_id": "1301",
+            "has_child": "N",
+            "menu_item_title": "Currency Info",
+            "menu_parent_id": "1300"
+          },
+          {
+            "menu_item_id": "1400",
+            "has_child": "Y",
+            "menu_item_title": "Holiday Table",
+            "menu_parent_id": "1000"
+          },
+          {
+            "menu_item_id": "1401",
+            "has_child": "N",
+            "menu_item_title": "Holiday Calendar",
+            "menu_parent_id": "1400"
+          },
+          {
+            "menu_item_id": "1402",
+            "has_child": "N",
+            "menu_item_title": "Product Holiday",
+            "menu_parent_id": "1400"
+          },
+          {
+            "menu_item_id": "1500",
+            "has_child": "Y",
+            "menu_item_title": "Notification Board",
+            "menu_parent_id": "1000"
+          },
+          {
+            "menu_item_id": "1501",
+            "has_child": "N",
+            "menu_item_title": "Notification Board",
+            "menu_parent_id": "1500"
+          }
+        ]
+      },
+      {
+        "menu_id": "5000",
+        "menu_title": "Transaction",
+        "menu_item_list": [
+          {
+            "menu_item_id": "5500",
+            "has_child": "Y",
+            "menu_item_title": "FAVORITE FUND TRANSFER",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5501",
+            "has_child": "N",
+            "menu_item_title": "Internal Fund Transfer",
+            "menu_parent_id": "5500"
+          },
+          {
+            "menu_item_id": "5503",
+            "has_child": "N",
+            "menu_item_title": "RTGS",
+            "menu_parent_id": "5500"
+          },
+          {
+            "menu_item_id": "5504",
+            "has_child": "N",
+            "menu_item_title": "SKN/LLG",
+            "menu_parent_id": "5500"
+          },
+          {
+            "menu_item_id": "5505",
+            "has_child": "N",
+            "menu_item_title": "Online Transfer",
+            "menu_parent_id": "5500"
+          },
+          {
+            "menu_item_id": "5506",
+            "has_child": "N",
+            "menu_item_title": "Telegraphic Transfer",
+            "menu_parent_id": "5500"
+          },
+          {
+            "menu_item_id": "5100",
+            "has_child": "Y",
+            "menu_item_title": "Fund Transfer",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5101",
+            "has_child": "N",
+            "menu_item_title": "Internal Fund Transfer",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5102",
+            "has_child": "N",
+            "menu_item_title": "Own Fund Transfer",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5103",
+            "has_child": "N",
+            "menu_item_title": "RTGS",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5104",
+            "has_child": "N",
+            "menu_item_title": "LLG/SKN",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5105",
+            "has_child": "N",
+            "menu_item_title": "Online Transfer",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5106",
+            "has_child": "N",
+            "menu_item_title": "Telegraphic Transfer",
+            "menu_parent_id": "5100"
+          },
+          {
+            "menu_item_id": "5200",
+            "has_child": "Y",
+            "menu_item_title": "Online Payments",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5201",
+            "has_child": "N",
+            "menu_item_title": "Bill Presentment",
+            "menu_parent_id": "5200"
+          },
+          {
+            "menu_item_id": "5202",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Payment",
+            "menu_parent_id": "5200"
+          },
+          {
+            "menu_item_id": "5300",
+            "has_child": "Y",
+            "menu_item_title": "Liquidity Management",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5301",
+            "has_child": "N",
+            "menu_item_title": "Account Sweep In",
+            "menu_parent_id": "5300"
+          },
+          {
+            "menu_item_id": "5400",
+            "has_child": "Y",
+            "menu_item_title": "File Upload",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5401",
+            "has_child": "N",
+            "menu_item_title": "Non Bulk File Upload",
+            "menu_parent_id": "5400"
+          },
+          {
+            "menu_item_id": "5402",
+            "has_child": "N",
+            "menu_item_title": "Bulk File Upload",
+            "menu_parent_id": "5400"
+          },
+          {
+            "menu_item_id": "5403",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Bulk Online",
+            "menu_parent_id": "5400"
+          },
+          {
+            "menu_item_id": "5404",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Bulk Offline",
+            "menu_parent_id": "5400"
+          },
+          {
+            "menu_item_id": "5600",
+            "has_child": "Y",
+            "menu_item_title": "Time Deposits",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5601",
+            "has_child": "N",
+            "menu_item_title": "Time Deposit Opening",
+            "menu_parent_id": "5600"
+          },
+          {
+            "menu_item_id": "5602",
+            "has_child": "N",
+            "menu_item_title": "Account Rollover Maintenance",
+            "menu_parent_id": "5600"
+          },
+          {
+            "menu_item_id": "5700",
+            "has_child": "Y",
+            "menu_item_title": "All Transaction",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5701",
+            "has_child": "N",
+            "menu_item_title": "Consolidated View",
+            "menu_parent_id": "5700"
+          },
+          {
+            "menu_item_id": "5900",
+            "has_child": "Y",
+            "menu_item_title": "Cash Withdrawal",
+            "menu_parent_id": "5000"
+          },
+          {
+            "menu_item_id": "5901",
+            "has_child": "N",
+            "menu_item_title": "Cash Withdrawal",
+            "menu_parent_id": "5900"
+          }
+        ]
+      },
+      {
+        "menu_id": "10000",
+        "menu_title": "Authorizations ",
+        "menu_item_list": [
+          {
+            "menu_item_id": "10200",
+            "has_child": "Y",
+            "menu_item_title": "TRANSACTION",
+            "menu_parent_id": "10000"
+          },
+          {
+            "menu_item_id": "10201",
+            "has_child": "N",
+            "menu_item_title": "Fund Transfer",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10202",
+            "has_child": "N",
+            "menu_item_title": "Internal Fund Transfer",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10203",
+            "has_child": "N",
+            "menu_item_title": "Own Fund Transfer",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10204",
+            "has_child": "N",
+            "menu_item_title": "RTGS",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10205",
+            "has_child": "N",
+            "menu_item_title": "SKN/LLG",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10206",
+            "has_child": "N",
+            "menu_item_title": "Online Transfer",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10207",
+            "has_child": "N",
+            "menu_item_title": "Telegraphic Transfer",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10208",
+            "has_child": "N",
+            "menu_item_title": "Online Payments",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10209",
+            "has_child": "N",
+            "menu_item_title": "Bill Presentment",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10210",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Payment",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10211",
+            "has_child": "N",
+            "menu_item_title": "Liquidity Management",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10212",
+            "has_child": "N",
+            "menu_item_title": "Account Sweep In",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10213",
+            "has_child": "N",
+            "menu_item_title": "File Upload",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10214",
+            "has_child": "N",
+            "menu_item_title": "Non Bulk File Upload",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10215",
+            "has_child": "N",
+            "menu_item_title": "Bulk File Upload",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "102151",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Upload Batch",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10216",
+            "has_child": "N",
+            "menu_item_title": "All Transaction",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10217",
+            "has_child": "N",
+            "menu_item_title": "Consolidated View",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "10218",
+            "has_child": "N",
+            "menu_item_title": "Time Deposits",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "102181",
+            "has_child": "N",
+            "menu_item_title": "Time Deposit Opening",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "102182",
+            "has_child": "N",
+            "menu_item_title": "Account Rollover Maintenance",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "102190",
+            "has_child": "N",
+            "menu_item_title": "Cash Withdrawal",
+            "menu_parent_id": "10200"
+          },
+          {
+            "menu_item_id": "102191",
+            "has_child": "N",
+            "menu_item_title": "Cash Withdrawal",
+            "menu_parent_id": "10200"
+          }
+        ]
+      },
+      {
+        "menu_id": "8000",
+        "menu_title": "Administration",
+        "menu_item_list": [
+          {
+            "menu_item_id": "8500",
+            "has_child": "Y",
+            "menu_item_title": "BENEFICIARY MANAGEMENT",
+            "menu_parent_id": "8000"
+          },
+          {
+            "menu_item_id": "8501",
+            "has_child": "N",
+            "menu_item_title": "Beneficiary Management",
+            "menu_parent_id": "8500"
+          },
+          {
+            "menu_item_id": "8600",
+            "has_child": "Y",
+            "menu_item_title": "Offline Documents",
+            "menu_parent_id": "8000"
+          },
+          {
+            "menu_item_id": "8601",
+            "has_child": "N",
+            "menu_item_title": "Offline Document Download",
+            "menu_parent_id": "8600"
+          }
+        ]
+      },
+      {
+        "menu_id": "9000",
+        "menu_title": "Account Management",
+        "menu_item_list": [
+          {
+            "menu_item_id": "9100",
+            "has_child": "Y",
+            "menu_item_title": "ACCOUNT SUMMARY",
+            "menu_parent_id": "9000"
+          },
+          {
+            "menu_item_id": "9101",
+            "has_child": "N",
+            "menu_item_title": "Account Summary",
+            "menu_parent_id": "9100"
+          },
+          {
+            "menu_item_id": "9300",
+            "has_child": "Y",
+            "menu_item_title": "E-SPT",
+            "menu_parent_id": "9000"
+          },
+          {
+            "menu_item_id": "9301",
+            "has_child": "N",
+            "menu_item_title": "E-SPT",
+            "menu_parent_id": "9300"
+          },
+          {
+            "menu_item_id": "9400",
+            "has_child": "Y",
+            "menu_item_title": "Loan",
+            "menu_parent_id": "9000"
+          },
+          {
+            "menu_item_id": "9401",
+            "has_child": "N",
+            "menu_item_title": "Loan",
+            "menu_parent_id": "9400"
+          },
+          {
+            "menu_item_id": "9500",
+            "has_child": "Y",
+            "menu_item_title": "Wealth Management",
+            "menu_parent_id": "9000"
+          },
+          {
+            "menu_item_id": "9501",
+            "has_child": "N",
+            "menu_item_title": "Wealth Management",
+            "menu_parent_id": "9500"
+          },
+          {
+            "menu_item_id": "9502",
+            "has_child": "N",
+            "menu_item_title": "Wealth Obligasi Retail",
+            "menu_parent_id": "9500"
+          }
+        ]
+      },
+      {
+        "menu_id": "6000",
+        "menu_title": "Authorization",
+        "menu_item_list": [
+          {
+            "menu_item_id": "6700",
+            "has_child": "Y",
+            "menu_item_title": "Transaction",
+            "menu_parent_id": "6000"
+          },
+          {
+            "menu_item_id": "6701",
+            "has_child": "N",
+            "menu_item_title": "Fund Transfer",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6702",
+            "has_child": "N",
+            "menu_item_title": "Internal Fund Transfer",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6703",
+            "has_child": "N",
+            "menu_item_title": "Own Fund Transfer",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6704",
+            "has_child": "N",
+            "menu_item_title": "Local Interbank",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6705",
+            "has_child": "N",
+            "menu_item_title": "Telegraphic Transfer",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6706",
+            "has_child": "N",
+            "menu_item_title": "Online Payments",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6707",
+            "has_child": "N",
+            "menu_item_title": "Bill Presentment",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6708",
+            "has_child": "N",
+            "menu_item_title": "E-Tax Payment",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6709",
+            "has_child": "N",
+            "menu_item_title": "Liquidity Management",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6710",
+            "has_child": "N",
+            "menu_item_title": "Account Sweep In",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6711",
+            "has_child": "N",
+            "menu_item_title": "File Upload",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6712",
+            "has_child": "N",
+            "menu_item_title": "Non Bulk File Upload",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6713",
+            "has_child": "N",
+            "menu_item_title": "Bulk File Upload",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6714",
+            "has_child": "N",
+            "menu_item_title": "RTGS",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6715",
+            "has_child": "N",
+            "menu_item_title": "SKN/LLG",
+            "menu_parent_id": "6700"
+          },
+          {
+            "menu_item_id": "6716",
+            "has_child": "N",
+            "menu_item_title": "Online Transfer",
+            "menu_parent_id": "6700"
+          }
+        ]
+      },
+      {
+        "menu_id": "11000",
+        "menu_title": "Reports",
+        "menu_item_list": [
+          {
+            "menu_item_id": "11800",
+            "has_child": "Y",
+            "menu_item_title": "SUBSCRIBER PROFILE",
+            "menu_parent_id": "11000"
+          },
+          {
+            "menu_item_id": "11801",
+            "has_child": "N",
+            "menu_item_title": "Subscriber Profile",
+            "menu_parent_id": "11800"
+          },
+          {
+            "menu_item_id": "11900",
+            "has_child": "Y",
+            "menu_item_title": "TRANSACTION SUMMARY",
+            "menu_parent_id": "11000"
+          },
+          {
+            "menu_item_id": "11901",
+            "has_child": "N",
+            "menu_item_title": "Transaction Summary",
+            "menu_parent_id": "11900"
+          },
+          {
+            "menu_item_id": "12200",
+            "has_child": "Y",
+            "menu_item_title": "SUBSCRIBER AUDIT TRAIL DETAIl",
+            "menu_parent_id": "11000"
+          },
+          {
+            "menu_item_id": "12201",
+            "has_child": "N",
+            "menu_item_title": "Subscriber Audit Trail Detail",
+            "menu_parent_id": "12200"
+          }
+        ]
+      }
+    ]
+  }
+}

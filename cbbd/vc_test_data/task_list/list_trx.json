@@ -1,0 +1,41 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_trx": [
+      {
+        "pymt_master_id": "01d3ccff-94cc-4293-8132-068b17c65a31",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT190561102865",
+        "customer_ref": "190561102865",
+        "debit_acct_no": "010800001900",
+        "debit_acct_ccy": "IDR",
+        "sender_name": "ALIASNAME1 203",
+        "bene_acct_no": "010800003021",
+        "bene_acct_ccy": "IDR",
+        "value_date": "2019-05-25",
+        "amount": "520000.00",
+        "amount_ccy": "IDR",
+        "trx_status": "001",
+        "version": "1"
+      },
+      {
+        "pymt_master_id": "01d3ccff-94cc-4293-8132-068b17c65a32",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT190561102866",
+        "customer_ref": "190561102866",
+        "debit_acct_no": "010800001900",
+        "debit_acct_ccy": "IDR",
+        "sender_name": "ALIASNAME1 203",
+        "bene_acct_no": "010800003021",
+        "bene_acct_ccy": "IDR",
+        "value_date": "2019-05-25",
+        "amount": "510000.00",
+        "amount_ccy": "USD",
+        "trx_status": "001",
+        "version": "1"
+      }
+    ],
+    "total_rows": "2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "inq_session_id": "sfsdf-sdfsdf-sdfsd-sdfdsf",
+    "bill_ref_no": "1234567",
+    "beneficiary_name": "Jacky Wong",
+    "details": {
+      "header": {
+        "headerLeft": "HEADER TEXT LEFT ALIGNMENT",
+        "headerCenter": "HEADER TEXT CENTER ALIGNMENT",
+        "headerRight": "HEADER TEXT RIGHT ALIGNMENT"
+      },
+      "detail": [
+        {
+          "label": "SOME LABEL",
+          "value": "SOME VALUE"
+        },
+        {
+          "label": "SOME LABEL",
+          "value": "SOME VALUE"
+        }
+      ],
+      "footer": {
+        "footerLeft": "FOOTER TEXT LEFT ALIGNTMENT",
+        "footerCenter": "FOOTER TEXT CENTER ALIGNMENT",
+        "footerRight": "FOOTER TEXT RIGHT ALIGNMENT"
+      }
+    }
+  }
+}

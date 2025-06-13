@@ -1,0 +1,128 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+compileJava.options.encoding='UTF-8'
+
+
+
+task entityJar(type: Jar) {
+   	baseName = 'mcb-entity'
+	from(sourceSets.main.output) {
+        include "com/silverlake/mleb/mcb/entity/**"
+        exclude "com/silverlake/mleb/mcb/entity/dao/**"
+    }
+}
+
+task libJar(type: Jar) {
+   	baseName = 'mcb'
+	from(sourceSets.main.output) {
+        include "com/silverlake/mleb/mcb/bean/**"
+        include "com/silverlake/mleb/mcb/constant/**"
+        include "com/silverlake/mleb/mcb/module/ib/**"
+		include "com/silverlake/mleb/mcb/module/vc/**"  
+    }
+}
+
+
+
+war {
+
+    baseName = 'mcb'
+    version =  ''
+}
+
+repositories {
+    mavenCentral()
+	maven {
+		url "https://repository.mulesoft.org/nexus/content/repositories/public/"
+	}
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+
+
+
+dependencies {
+
+	compile("org.springframework:spring-webmvc:4.1.8.RELEASE")
+    compile("org.springframework:spring-web:4.1.8.RELEASE")
+    compile("jstl:jstl:1.2")
+	compile ("org.springframework.data:spring-data-jpa:1.8.0.RELEASE")
+	compile ("org.apache.cxf:cxf-rt-frontend-jaxws:2.7.17")
+	compile ("org.apache.cxf:cxf-rt-transports-http:2.7.17")
+	compile ("org.apache.cxf:cxf-rt-ws-security:2.7.17")
+	compile ("commons-lang:commons-lang:2.5")
+	compile ("org.apache.logging.log4j:log4j-api:2.3")
+    compile ("org.apache.logging.log4j:log4j-core:2.3.1")
+    compile ("com.caucho:hessian:4.0.38")
+    compile ("net.sf.ehcache:ehcache:2.10.0")
+    compile ("com.google.code.gson:gson:2.5")
+    compile ("org.apache.ws.security:wss4j:1.6.18")
+    compile ("commons-codec:commons-codec:1.10")
+    compile ('org.apache.commons:commons-lang3:3.0')
+    compile ('net.sf.dozer:dozer:5.5.1')
+    compile ('javax.xml:jaxrpc-api:1.1')
+    //compile ('axis:axis:1.4')
+    compile ('com.itextpdf:itextpdf:5.5.8')
+    //compile group: 'commons-net', name: 'commons-net', version: '1.4.1'
+    compile group: 'commons-net', name: 'commons-net', version: '3.3'
+    compile group: 'org.apache.commons', name: 'commons-configuration2', version: '2.1'
+  	compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.2'
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.12'
+  	compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.2.7'
+	//compile group: 'opensymphony', name: 'quartz', version: '1.6.3'
+	compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.2.1'
+	compile group: 'commons-io', name: 'commons-io', version: '2.5'
+	//compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.35'
+	compile fileTree("lib")
+
+   	providedCompile ("javax.servlet:servlet-api:2.5")
+   	//providedCompile ("org.hibernate:hibernate-entitymanager:4.2.21.Final")
+	//providedCompile ("org.hibernate:hibernate-entitymanager:4.3.7.Final")
+	providedCompile ("org.hibernate:hibernate-entitymanager:3.6.10.Final")
+	
+	//providedCompile fileTree("$baseProject/WebContent/WEB-INF/lib")
+	//providedCompile files("$baseProject/MPEx-entity-v1.0.jar")
+   	//providedCompile fileTree("gradlelib")
+   	//providedCompile ("org.hibernate:hibernate-entitymanager:3.6.7.Final")
+   	//providedCompile ("org.apache.axis:axis:1.4")
+	//providedCompile ("javax.xml.rpc:javax.xml.rpc-api:1.1")
+
+	
+}
+
+
+
+
+
+
+sourceSets.main.java.srcDirs = [ "src" ]
+sourceSets.main.resources.srcDirs = [ "build/" ]
+sourceSets.main.resources.includes = [ "**/*.xml","**/*.properties","**/*.png"]
+sourceSets.main.resources.excludes = [ "classes" ]
+project.buildDir = 'build_target'
+
+war {
+	manifest {
+		attributes ('DisableIBMJAXWSEngine':'true','Build-Time-ISO-8601': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"))
+		
+	}
+    from "WebContent" // adds a file-set to the root of the archive
+}
+
+task dist(type: Copy){
+	from '.\\build_target\\libs'
+	into tomcatHome+'\\webapps'
+	include('*.war')
+}
+
+task libDist(type: Copy){
+from '.\\build_target\\libs'
+	into ccwsPath+'\\lib'
+	include('*.jar')
+}

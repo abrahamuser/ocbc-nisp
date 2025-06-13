@@ -1,0 +1,118 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "prod_detail_list": [
+      {
+        "prod_cd": "A1",
+        "ccy_code": "IDR",
+        "tenor_value": "1",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "100000",
+        "max_amount": "50000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "A2",
+        "ccy_code": "IDR",
+        "tenor_value": "3",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "50000",
+        "max_amount": "30000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "A3",
+        "ccy_code": "IDR",
+        "tenor_value": "6",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "100000",
+        "max_amount": "20000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "A4",
+        "ccy_code": "IDR",
+        "tenor_value": "1",
+        "tenor_type": "Y",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "Y",
+        "min_amount": "500000",
+        "max_amount": "20000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "A5",
+        "ccy_code": "IDR",
+        "tenor_value": "2",
+        "tenor_type": "Y",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "Y",
+        "min_amount": "300000",
+        "max_amount": "50000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "B1",
+        "ccy_code": "USD",
+        "tenor_value": "1",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "100000",
+        "max_amount": "20000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "B2",
+        "ccy_code": "USD",
+        "tenor_value": "3",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "100000",
+        "max_amount": "30000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "B3",
+        "ccy_code": "USD",
+        "tenor_value": "6",
+        "tenor_type": "M",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "M",
+        "min_amount": "100000",
+        "max_amount": "20000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "B4",
+        "ccy_code": "USD",
+        "tenor_value": "1",
+        "tenor_type": "Y",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "Y",
+        "min_amount": "500000",
+        "max_amount": "20000000",
+        "interest_rate": "5.00"
+      },
+      {
+        "prod_cd": "B5",
+        "ccy_code": "USD",
+        "tenor_value": "2",
+        "tenor_type": "Y",
+        "interest_term_value": "1,3,5",
+        "interest_term_type": "Y",
+        "min_amount": "300000",
+        "max_amount": "50000000",
+        "interest_rate": "5.00"
+      }
+    ]
+  }
+}

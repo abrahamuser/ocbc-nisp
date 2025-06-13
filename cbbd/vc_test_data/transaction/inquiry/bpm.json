@@ -1,0 +1,51 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "inq_session_id": "sfsdf-sdfsdf-sdfsd-sdfdsf",
+    "last_month_inv_amt": 10000,
+    "last_month_inv_caption": "Statement Amount",
+    "last_month_inv_ref": "ref002",
+    "total_inv_amt": 20000,
+    "total_inv_caption": "Total Amount",
+    "total_inv_ref": "ref001",
+    "details": {
+      "header": {
+        "headerLeft": "HEADER TEXT LEFT ALIGNMENT",
+        "headerCenter": "HEADER TEXT CENTER ALIGNMENT",
+        "headerRight": "HEADER TEXT RIGHT ALIGNMENT"
+      },
+      "detail": [
+        {
+          "label": "Period",
+          "value": "JUN 2019 - JUL 2019"
+        },
+        {
+          "label": "Name",
+          "value": "MR. DIGITAL BANKING"
+        },
+        {
+          "label": "Customer No",
+          "value": "08112214281"
+        },
+        {
+          "label": "Amount",
+          "value": "IDR 100,000.00"
+        },
+        {
+          "label": "Admin Fee",
+          "value": "IDR 2,500"
+        },
+        {
+          "label": "Total Amount",
+          "value": "IDR 102,500"
+        }
+      ],
+      "footer": {
+        "footerLeft": "FOOTER TEXT LEFT ALIGNTMENT",
+        "footerCenter": "FOOTER TEXT CENTER ALIGNMENT",
+        "footerRight": "FOOTER TEXT RIGHT ALIGNMENT"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "is_cot": false,
+    "bus_hour_start": "06:00",
+    "bus_hour_end": "23:59"
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jws:handler-chains xmlns:jws="http://java.sun.com/xml/ns/javaee">
+
+  <jws:handler-chain>
+  	
+  	<jws:handler>
+      <jws:handler-name>SecurityAppDeviceInfo04</jws:handler-name>
+      <jws:handler-class>com.silverlake.mleb.ccmcb.interceptor.SecurityAppDeviceInfo</jws:handler-class>      
+    </jws:handler>
+    <jws:handler>
+      <jws:handler-name>CSRFHandler03</jws:handler-name>
+      <jws:handler-class>com.silverlake.mleb.ccmcb.interceptor.SecurityCSRF</jws:handler-class>      
+    </jws:handler>
+    <jws:handler>
+      <jws:handler-name>LoginSessionHandler02</jws:handler-name>
+      <jws:handler-class>com.silverlake.mleb.ccmcb.interceptor.SecurityLoginSession</jws:handler-class>      
+    </jws:handler>
+     <jws:handler>
+      <jws:handler-name>InputCheckHandler01</jws:handler-name>
+      <jws:handler-class>com.silverlake.mleb.ccmcb.interceptor.SecurityValidateInput</jws:handler-class>      
+    </jws:handler>
+</jws:handler-chain>
+  
+</jws:handler-chains>

@@ -1,0 +1,10 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "org_cd": "CASECASE",
+    "usr_cd": "SGL_A",
+    "user_status": "US001",
+    "user_state": "TE001"
+  }
+}

@@ -1,0 +1,3 @@
+UPDATE mleb_mcb.generalcode SET GNCODE_DESCRIPTION='Diperpanjang dan Bunga Ditambahkan ke Pokok' WHERE GNCODE='A' AND GNCODE_TYPE = 'ROLLOVERTYPE_IN';
+UPDATE mleb_mcb.generalcode SET GNCODE_DESCRIPTION='Diperpanjang' WHERE GNCODE='Y' AND GNCODE_TYPE = 'ROLLOVERTYPE_IN';
+UPDATE mleb_mcb.generalcode SET GNCODE_DESCRIPTION='Tidak Diperpanjang' WHERE GNCODE='N' AND GNCODE_TYPE = 'ROLLOVERTYPE_IN';

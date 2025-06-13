@@ -1,0 +1,39 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_notif_board": [
+      {
+        "id": "3a32080e-419d-46df-bc79-59b75f82e7fd",
+        "notify_date": "2019-05-25",
+        "notify_exp": "2019-05-30",
+        "title": "Reminder",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut malesuada leo. Integer sodales pharetra risus, et tempus quam vestibulum et. Maecenas velit lacus, consequat at sagittis sed, pellentesque quis ex. Donec egestas lacinia enim, ac tempus nunc sodales ac. Suspendisse congue blandit dolor quis consectetur. Vestibulum eget arcu eleifend, luctus magna a, porttitor sem. Proin ut molestie augue. Mauris vestibulum hendrerit ultricies. Maecenas ullamcorper tortor tortor, vel consequat odio venenatis tincidunt. Fusce ullamcorper leo eget ipsum consequat luctus. Maecenas eleifend porttitor enim, ut aliquet turpis elementum at. Quisque fringilla finibus vestibulum.",
+        "receive_list": "Internal|Provider/Subscriber",
+        "is_include_me": "true",
+        "org_cd": "CASECASE",
+        "created_by": "624ac31a-843c-42d2-83a5-812ca848a6cc",
+        "time_created": "2019-05-24 23:59:59",
+        "updated_by": "624ac31a-843c-42d2-83a5-812ca848a6cc",
+        "time_updated": "2019-05-24 23:59:59",
+        "version": "1"
+      },
+	  {
+        "id": "2a32080e-419d-46df-bc79-59b75f82e7fd",
+        "notify_date": "2019-05-22",
+        "notify_exp": "2019-05-22",
+        "title": "Reminder",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut malesuada leo. Integer sodales pharetra risus, et tempus quam vestibulum et. Maecenas velit lacus, consequat at sagittis sed, pellentesque quis ex. Donec egestas lacinia enim, ac tempus nunc sodales ac. Suspendisse congue blandit dolor quis consectetur. Vestibulum eget arcu eleifend, luctus magna a, porttitor sem. Proin ut molestie augue. Mauris vestibulum hendrerit ultricies. Maecenas ullamcorper tortor tortor, vel consequat odio venenatis tincidunt. Fusce ullamcorper leo eget ipsum consequat luctus. Maecenas eleifend porttitor enim, ut aliquet turpis elementum at. Quisque fringilla finibus vestibulum.",
+        "receive_list": "Internal|Provider/Subscriber",
+        "is_include_me": "true",
+        "org_cd": "CASECASE",
+        "created_by": "624ac31a-843c-42d2-83a5-812ca848a6cc",
+        "time_created": "2019-05-22 22:22:22",
+        "updated_by": "624ac31a-843c-42d2-83a5-812ca848a6cc",
+        "time_updated": "2019-05-22 22:22:22",
+        "version": "2"
+      }
+    ],
+    "total_rows": "2"
+  }
+}

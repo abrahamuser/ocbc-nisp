@@ -1,0 +1,39 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+  	"total_rows": 3,
+    "payee_list": [
+      {
+        "record_id": "001",
+        "nick_name": "payee nick name 1",
+        "email_address": "sss@sss.com",
+        "phone_number": "08222222222",
+        "biller_name_en": "Great Eastern",
+        "biller_name_in": "Great Eastern",
+        "biller_code": "2223",
+        "billing_id": "333333"
+      },
+      {
+        "record_id": "002",
+        "nick_name": "payee nick name 2",
+        "email_address": "sss@sss.com",
+        "phone_number": "08222222222",
+        "biller_name_en": "Great Eastern 2",
+        "biller_name_in": "Great Eastern 2",
+        "biller_code": "2223",
+        "billing_id": "333333"
+      },
+      {
+        "record_id": "003",
+        "nick_name": "payee nick name 3",
+        "email_address": "sss@sss.com",
+        "phone_number": "08222222222",
+        "biller_name_en": "Great Eastern 3",
+        "biller_name_in": "Great Eastern 3",
+        "biller_code": "2223",
+        "billing_id": "333333"
+      }
+    ]
+  }
+}

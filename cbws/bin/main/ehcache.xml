@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+	<!-- <terracottaConfig url="192.168.203.185:9510"/> -->
+    <defaultCache eternal="true" maxElementsInMemory="5000" overflowToDisk="false" />
+    
+    <cache name="records" maxElementsInMemory="9999" eternal="true" overflowToDisk="false">
+    	<!-- userLoginSession -->
+    </cache>
+    
+    
+     <cache name="recordSession" maxElementsInMemory="9999" eternal="true" overflowToDisk="false">
+    	<!-- userLoginSession -->
+    </cache>
+    
+    
+     <cache name="removeSession" maxElementsInMemory="9999" eternal="true" timeToLiveSeconds="3600" overflowToDisk="false">
+    	<!-- userLoginSession -->
+    </cache>
+    
+    
+     <cache name="msgcache_en" maxElementsInMemory="99999" eternal="true" overflowToDisk="false">
+    </cache>
+    
+    
+     <cache name="msgcache_id" maxElementsInMemory="99999" eternal="true" overflowToDisk="false">
+    </cache>
+    
+    
+   
+</ehcache>

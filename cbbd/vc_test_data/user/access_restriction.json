@@ -1,0 +1,10 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_restriction": [
+      "mn.act.new",
+      "mn.act.delete"
+    ]
+  }
+}

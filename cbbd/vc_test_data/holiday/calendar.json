@@ -1,0 +1,20 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_holiday_calendar": [
+      {
+        "calendar_date": "2019-01-01",
+        "holiday_type": "PH",
+        "desc_id": "Tahun Baru 2019",
+        "desc_en": "New Year 2019"
+      },
+      {
+        "calendar_date": "2019-01-05",
+        "holiday_type": "WK",
+        "desc_id": "Sabtu",
+        "desc_en": "Saturday"
+      }
+    ]
+  }
+}

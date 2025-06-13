@@ -1,0 +1,20 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "userauth_result_list": [
+      {			
+        "pending_record_id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef11",
+        "action_code": "A",
+        "result_status_cd": "00000",
+        "result_status_desc": "Success"
+      },
+	  {			
+        "pending_record_id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef13",
+        "action_code": "A",
+        "result_status_cd": "018",
+        "result_status_desc": "Failed"
+      }
+    ]
+  }
+}

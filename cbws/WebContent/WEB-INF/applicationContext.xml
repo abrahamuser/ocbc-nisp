@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+	http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.silverlake" />
+	
+	<task:scheduler id="taskScheduler" pool-size="50"/>
+    <task:executor id="taskExecutor"  pool-size="2000" />
+    <task:annotation-driven executor="taskExecutor" scheduler="taskScheduler"/>
+	
+	
+	<jaxws:endpoint id="McBWSServices" implementor="#MCBImpl" address="/McBWSServices" >
+		<jaxws:properties>
+          <entry key="org.apache.cxf.endpoint.private" value="true"/>
+          <entry key="mtom-enabled" value="true"/>
+          <entry key="attachment-memory-threshold" value="1048576"/><!-- 1MB -->
+          <entry key="attachment-max-size" value="1048576"/><!-- 1MB -->
+          <entry key="org.apache.cxf.stax.maxTextLength" value="1024"/>
+       	</jaxws:properties>		
+	 </jaxws:endpoint>
+	 
+	 <!-- <jaxws:endpoint id="McBWSServices2" implementor="#McBImpl2" address="/McBWSServices2" >
+		<jaxws:properties>
+          <entry key="org.apache.cxf.endpoint.private" value="true"/>
+          <entry key="mtom-enabled" value="true"/>
+          <entry key="attachment-memory-threshold" value="404800"/>400KB
+          <entry key="attachment-max-size" value="404800"/>400KB
+          <entry key="org.apache.cxf.stax.maxTextLength" value="700"/>
+       	</jaxws:properties>		
+	 </jaxws:endpoint> -->
+	 
+  	<bean id="MCBImpl" class="com.silverlake.mleb.ccmcb.adapter.MCBImpl" />
+  	<!-- <bean id="McBImpl2" class="com.silverlake.mleb.ccmcb.adapter.MiBImpl2" /> -->
+	<bean id="MuleDispatcher" class="com.silverlake.mleb.ccmcb.dispatcher.MlebDispatcher" init-method="initialApiContext" destroy-method="stopApiContext"/> 
+	<bean id="UserLoginSession" class="com.silverlake.mleb.ccmcb.util.UserLoginSession" init-method="initialSession" destroy-method="stopSession"/> 
+	<bean id="initApp" class="com.silverlake.mleb.ccmcb.init.InitApp" init-method="initApp" destroy-method="stopApp" />
+		
+
+	 	
+</beans>

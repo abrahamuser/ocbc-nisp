@@ -1,0 +1,40 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "country_list": [
+      {
+        "country_code": "IDN",
+        "country_name": "Indonesia"
+      },
+      {
+        "country_code": "MYS",
+        "country_name": "Malaysia"
+      },
+      {
+        "country_code": "IDN",
+        "country_name": "Thailand"
+      },
+      {
+        "country_code": "AUS",
+        "country_name": "Australia"
+      },
+      {
+        "country_code": "CBD",
+        "country_name": "Cambodia"
+      },
+      {
+        "country_code": "NZD",
+        "country_name": "New Zealand"
+      },
+      {
+        "country_code": "USA",
+        "country_name": "United States"
+      },
+      {
+        "country_code": "SWE",
+        "country_name": "Sweden"
+      }
+    ]
+  }
+}

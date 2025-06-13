@@ -1,0 +1,14 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "base_interest_rate": "5.0",
+    "variant_rate": "0.5",
+    "variant_rate_op": "+",
+    "customer_rate": "5.0",
+    "min_interest_rate": "4.0",
+    "max_interest_rate": "6.0",
+    "deal_type": "S",
+    "version_variant_rate": "1"
+  }
+}

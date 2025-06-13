@@ -1,0 +1,1 @@
+update mleb_mcb.generalcode set gncode_description = 'callcenter@ocbc.nisp' where gncode='email' and gncode_type='redirectUrl' and status='A';

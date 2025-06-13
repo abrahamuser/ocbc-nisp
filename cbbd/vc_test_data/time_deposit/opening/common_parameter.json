@@ -1,0 +1,47 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "purpose_code_list": [
+      {
+        "purpose_code": "S",
+        "purpose_desc_en": "Savings",
+        "purpose_desc_id": "Tabungan"
+      },
+      {
+        "purpose_code": "C",
+        "purpose_desc_en": "Current",
+        "purpose_desc_id": "Semasa"
+      }
+    ],
+	"source_fund_list": [
+      {
+        "source_fund_code": "S",
+        "source_fund_desc_en": "Savings",
+        "source_fund_desc_id": "Tabungan"
+      },
+      {
+        "source_fund_code": "C",
+        "source_fund_desc_en": "Current",
+        "source_fund_desc_id": "Semasa"
+      }
+    ],
+	"rollover_type_list": [
+      {
+        "rollover_code": "A",
+        "rollover_desc_en": "Rollover with interest compound",
+        "rollover_desc_id": "Rollover with interest compound"
+      },
+      {
+        "rollover_code": "Y",
+        "rollover_desc_en": "Rollover",
+        "rollover_desc_id": "Rollover"
+      },
+	  {
+        "rollover_code": "N",
+        "rollover_desc_en": "Non-rollover",
+        "rollover_desc_id": "Non-rollover"
+      }
+    ]
+  }
+}

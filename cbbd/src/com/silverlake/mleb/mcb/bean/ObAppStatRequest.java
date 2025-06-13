@@ -1,0 +1,19 @@
+package com.silverlake.mleb.mcb.bean;
+
+import java.io.Serializable;
+
+public class ObAppStatRequest extends ObRequest implements Serializable
+{
+	 private String action;
+
+	public String getAction() {
+		return action;
+	}
+
+	public void setAction(String action) {
+		this.action = action;
+	}
+	 
+	 
+
+}

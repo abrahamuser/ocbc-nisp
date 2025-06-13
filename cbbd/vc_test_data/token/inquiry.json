@@ -1,0 +1,23 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+  "list_token": [
+		{
+		 "token_type": "SMS",
+		 "token_no": "123",
+		 "is_default": "Y"
+		},
+		{
+		 "token_type": "SW",
+		 "token_no": "456",
+		 "is_default": "N"
+		},
+		{
+		 "token_type": "HW",
+		 "token_no": "789",
+		 "is_default": "N"
+		}
+	]	
+}
+}

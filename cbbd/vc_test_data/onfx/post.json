@@ -1,0 +1,25 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "trx_data": {
+      "pymt_master_id": "fc63d636-24d6-4908-8a5c-ae3d0ab24846",
+      "prod_cd": "ONFX",
+      "bank_ref": "BVONFX15266161619",
+      "customer_ref": "15266161619",
+      "debit_acct_no": "010800001900",
+      "debit_acct_ccy": "IDR",
+      "sender_name": "ALIASNAME1 203",
+      "bene_acct_no": "010800004813",
+      "bene_acct_ccy": "USD",
+      "value_date": "2019-05-25",
+      "amount": "25500.00",
+      "amount_ccy": "USD",
+      "trx_status": "012",
+      "fx_type": "FRX03",
+      "fx_rate": "15730.0000000",
+      "version": "1"
+    },
+    "error_message": ""
+  }
+}

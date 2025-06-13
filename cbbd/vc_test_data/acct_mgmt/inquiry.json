@@ -1,0 +1,19 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "org_cd": "CASECASE",
+    "acct_no": "040800002491",
+    "acct_ccy": "IDR",
+    "acct_name": "NAME1 292",
+    "acct_alias": "NAME1 292",
+    "balance_available": "1726038081122.46",
+    "balance_ledger": "1726038881122.46",
+    "cif_no": "0000000000000000292",
+    "prod_cd_sibs": "GRBIZ01008",
+    "acct_type_sibs": "D",
+    "mcbit": "Y",
+    "branch_cd_sibs": "05040",
+	"acct_status": 1
+  }
+}

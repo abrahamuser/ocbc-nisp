@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project name = "copy2server" default="copy" basedir=".">
+	<property file="ant.properties"/>
+	<property name="entity_loc" value="src/com/silverlake/mleb/pns/entity" />
+	<target name="copy" depends="">
+		
+		
+				<replace dir="${entity_loc}" value="@GeneratedValue(strategy = IDENTITY)">
+				  <include name="**/*.java"/>
+				  <replacetoken>//@GeneratedValue(strategy = IDENTITY)</replacetoken>
+				</replace>
+				<replace dir="${entity_loc}" value="//@GeneratedValue(strategy=GenerationType.AUTO, generator = &quot;id_Sequence&quot;)">
+				  <include name="**/*.java"/>
+				  <replacetoken>@GeneratedValue(strategy=GenerationType.AUTO, generator = "id_Sequence")</replacetoken>
+				</replace>
+				<replace dir="${entity_loc}" value="//@SequenceGenerator">
+				  <include name="**/*.java"/>
+				  <replacetoken>@SequenceGenerator</replacetoken>
+				</replace>
+		
+		
+			<exec executable="cmd">
+			    <arg line="/c gradle clean build libJar --stacktrace"/>
+  			</exec>
+		
+		    
+		
+			    <replace dir="${entity_loc}" value="//@GeneratedValue(strategy = IDENTITY)">
+				  <include name="**/*.java"/>
+				  <replacetoken>@GeneratedValue(strategy = IDENTITY)</replacetoken>
+				</replace>
+				<replace dir="${entity_loc}" value="@GeneratedValue(strategy=GenerationType.AUTO, generator = &quot;id_Sequence&quot;)">
+				  <include name="**/*.java"/>
+				  <replacetoken>//@GeneratedValue(strategy=GenerationType.AUTO, generator = "id_Sequence")</replacetoken>
+				</replace>
+				<replace dir="${entity_loc}" value="@SequenceGenerator">
+				  <include name="**/*.java"/>
+				  <replacetoken>//@SequenceGenerator</replacetoken>
+				</replace>
+
+
+		<copy todir="${tomcatWebapp}">
+			<fileset file="build_target\libs\*.war" />
+		</copy>
+		
+		<!--<scp trust="true" file="build_target\libs\mib.war" todir="root:z6bn7y@172.23.136.186:/mleb/tomcat/apache-tomcat-7.0.64/webapps/"/>-->
+		<!--<scp trust="true" file="build_target\libs\mib.war" todir="root:Passw0rd@192.168.1.2:/mml/apache-tomcat-7.0.64/webapps/"/>-->
+	</target>
+	
+	
+
+	
+</project>

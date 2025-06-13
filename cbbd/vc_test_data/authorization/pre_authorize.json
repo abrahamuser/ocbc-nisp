@@ -1,0 +1,14 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_backdated_info": [
+      {
+        "prod_cd": "IFT",
+        "count_backdated": "1",
+        "count_cot": "0",
+        "value_date": "2019-05-30"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+INSERT INTO mleb_mcb.generalcode (row_id,gncode,gncode_description,gncode_type,status) VALUES (mleb_mcb.GeneralCode_id.nextval,'fb_url','https://www.facebook.com/bankocbcnisp','redirectUrl','A');

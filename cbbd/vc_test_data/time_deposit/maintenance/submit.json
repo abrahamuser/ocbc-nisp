@@ -1,0 +1,30 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "trx_data": {
+      "pymt_master_id": "fc63d636-24d6-4951-8a5c-ae3d0ab24846",
+      "prod_cd": "TDAO",
+      "bank_ref": "TDAO12425355132",
+      "customer_ref": "12425355132",
+      "debit_acct_no": "010800001900",
+      "debit_acct_ccy": "IDR",
+      "amount": "25500.00",
+      "amount_ccy": "USD",
+      "interest_rate": "5",
+      "tenor": "1",
+      "tenor_code": "M",
+      "interest_term": "1",
+      "interest_term_code": "Y",
+      "ao_effective_date": "",
+      "ao_maturity_date": "",
+      "rollover_type": "A",
+      "rollover_type_new": "A",
+      "ao_product_code": "ABC123",
+      "ao_product_type": "S",
+      "trx_status": "012",
+      "version": "1"
+    },
+    "error_message": ""
+  }
+}

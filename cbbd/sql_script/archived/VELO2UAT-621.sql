@@ -1,0 +1,1 @@
+UPDATE mleb_mcb.generalcode SET GNCODE_DESCRIPTION='Diperpanjang dengan Bunga' WHERE GNCODE_TYPE='ROLLOVERTYPE_IN' AND GNCODE = 'A';

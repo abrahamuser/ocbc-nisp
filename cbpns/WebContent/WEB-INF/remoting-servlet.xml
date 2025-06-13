@@ -1,0 +1,104 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd 
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+
+	
+	<bean id="applicationProperties" class="com.silverlake.mleb.pex.util.PropertiesUtil">
+   		<property name="location" value="classpath:app.properties"/>
+   	</bean>
+
+
+	<context:annotation-config/>
+	<context:component-scan base-package="com.silverlake" >
+		<context:exclude-filter type="regex" expression="com.silverlake.mleb.pex.server.*"/> 
+		<context:exclude-filter type="regex" expression="com.silverlake.mleb.pex.task.*"/> 
+		<context:exclude-filter type="regex" expression="com.silverlake.mleb.pns.task.*"/> 
+	</context:component-scan>
+
+	<import resource="classpath:META-INF/jpa.xml"/>
+
+	<bean id="initCache" class="com.silverlake.mleb.pex.util.EhcacheSession" init-method="initialSession" destroy-method="stopSession" />
+	<bean id="initApp" class="com.silverlake.mleb.pex.init.InitApp" init-method="initApp" /> 
+	
+	
+
+	<task:scheduler id="taskScheduler" pool-size="50"/>
+    <task:executor id="taskExecutor"  pool-size="2000" />
+    <task:annotation-driven executor="taskExecutor" scheduler="taskScheduler"/>
+    
+    
+    <bean id="mapper" class="org.dozer.DozerBeanMapper">
+	  <property name="mappingFiles">
+	    <list>
+	      <value>dozerBeanMapping.xml</value>            
+	    </list>
+	  </property>
+	  <property name="customFieldMapper" ref="dozerCustomFieldMapper">         
+	  </property>
+	</bean>
+	<bean id="dozerCustomFieldMapper" class="com.silverlake.mleb.pex.util.HibernateFieldMapper" />
+    
+	
+	
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<mvc:annotation-driven/>
+
+	<bean name="/pex_api"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="ApiImpl" />
+		<property name="serviceInterface" value="com.silverlake.micb.core.api.ApiInterface" />
+	</bean>
+	
+	 
+	
+	<!-- <bean id="mqConnectionFactory" class="com.ibm.mq.jms.MQQueueConnectionFactory">
+	    <property name="hostName" value="10.3.14.19"/>
+	    <property name="port" value="1426"/>
+	    <property name="queueManager" value="EAIPRDQM5"/>
+	    <property name="transportType" value="1"/>
+	    <property name="channel" value="MOBMY.EAI"/> 
+	</bean>
+	
+		JMS Queue Connection Factory
+	<bean id="jmsQueueConnectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+	    	            
+	    <property name="targetConnectionFactory" ref="mqConnectionFactory"/>
+	</bean>
+	
+	
+	<bean name="requestMessageQueue" class="org.springframework.jms.core.JmsTemplate">
+			<property name="connectionFactory" ref="jmsQueueConnectionFactory" />
+			<property name="receiveTimeout" value="30000" />
+			<property name="destinationResolver" ref="jmsDestResolver" />
+			<property name="pubSubDomain" value="false"/>
+	</bean>
+	
+	<bean name="responseMessageQueue" class="org.springframework.jms.core.JmsTemplate">
+			<property name="connectionFactory" ref="jmsQueueConnectionFactory" />
+			<property name="receiveTimeout" value="60000" />
+			<property name="destinationResolver" ref="jmsDestResolver" />
+			<property name="pubSubDomain" value="false"/>
+	</bean>  
+   	
+   	
+   <bean id="jmsDestResolver" class="org.springframework.jms.support.destination.DynamicDestinationResolver"/>  -->
+		<!-- <bean id="jmsDestResolver" class="org.springframework.jms.support.destination.JndiDestinationResolver"/>-->
+	
+	
+</beans>

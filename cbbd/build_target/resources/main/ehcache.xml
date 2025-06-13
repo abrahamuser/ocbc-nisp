@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+	
+    
+    
+     <cache name="tempSession" maxElementsInMemory="500" eternal="true" overflowToDisk="false">
+    	
+    </cache>
+    
+    
+      
+     <cache name="accountSummaryCache" maxElementsInMemory="500" eternal="true" timeToLiveSeconds="600" overflowToDisk="false">
+    	
+    </cache>
+   
+   
+    <cache name="imageIDCache" maxElementsInMemory="500" eternal="true" timeToLiveSeconds="86400" overflowToDisk="false">
+    	
+    </cache>
+   
+    <cache name="accessInfoData" maxElementsInMemory="500" eternal="true" timeToLiveSeconds="86400" overflowToDisk="false">
+    	
+    </cache>
+   
+   
+   
+</ehcache>

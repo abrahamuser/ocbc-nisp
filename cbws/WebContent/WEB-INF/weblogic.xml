@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
+<session-descriptor>
+
+	<cookie-path>/ccmcb</cookie-path>
+	<cookie-name>CCMCBESSIONID</cookie-name>
+	<!-- <cookie-http-only>false</cookie-http-only> -->
+	<cookie-secure>true</cookie-secure>
+	<url-rewriting-enabled>false</url-rewriting-enabled>
+	
+	<!-- *** UNCOMMENT TO ENABLE WEBLOGIC REPLICATE SESSION TO DATABASE [START] ***  -->
+	<persistent-store-type>jdbc</persistent-store-type>
+    <persistent-store-pool>JDBCSESSION</persistent-store-pool>
+    <persistent-store-table>WL_SERVLET_SESSIONS</persistent-store-table>
+    <!-- *** UNCOMMENT TO ENABLE WEBLOGIC REPLICATE SESSION TO DATABASE [END]  ***  -->
+    
+    <!--  *** UNCOMMENT TO ENABLE SESSION SHARING ACROSS APPLICATIONS / CLUSTERS [START] ***-->
+    <!-- This method not allowed for different admin server  -->
+    <!-- 
+    <sharing-enabled>true</sharing-enabled>
+    <persistent-store-type>replicated_if_clustered</persistent-store-type>
+     -->
+    <!--  *** UNCOMMENT TO ENABLE SESSION SHARING ACROSS APPLICATIONS / CLUSTERS [END] ***-->
+</session-descriptor>
+<container-descriptor>
+ <prefer-application-packages>
+ 	<package-name>com.ctc.wstx.*</package-name>  
+     <package-name>org.codehaus.stax2.*</package-name>
+ </prefer-application-packages>
+ </container-descriptor>
+</weblogic-web-app>
+
+
+<!-- FOR WEBLOGIC REPLICATE SESSION TO DATABASE :::  EXTRA SETUP REQUIRED ......
+
+	1. CREATE SCHEMA/DATABASE WITH ANY NAME : EXAMPLE : SESSION_OCBC
+	
+	2. Connect to the specific SCHEMA/DATABASE, create table using script below :
+	
+		create table wl_servlet_sessions
+  			( wl_id VARCHAR2(100) NOT NULL,
+    		wl_context_path VARCHAR2(100) NOT NULL,
+    		wl_is_new CHAR(1),
+    		wl_create_time NUMBER(20),
+    		wl_is_valid CHAR(1),
+    		wl_session_values LONG RAW,
+    		wl_access_time NUMBER(20),
+    		wl_max_inactive_interval INTEGER,
+   			PRIMARY KEY (wl_id, wl_context_path) );
+   			
+   	3. Login to Weblogic console -> Services -> Data Sources, select New Generic Data Source
+   	   screen 1
+   	   Name : JDBCSESSION
+   	   JNDI Name : JDBCSESSION
+   	   screen 2
+   	   Database Driver : Oracle Driver (Thin) For Instance Connections; Version:Any
+   	   screen 4
+   	   Database User Name: < refer to step 1 during create SCHEMA/DATABASE >
+   	   Password: < refer to step 1 during create SCHEMA/DATABASE >
+   	   
+   	4. Restart Weblogic and deloy latest war
+	
+
+******** FOR WEBLOGIC REPLICATE SESSION TO DATABASE :::  EXTRA SETUP END -->
+	 
+	 
+	 

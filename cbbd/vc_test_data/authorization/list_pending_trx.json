@@ -1,0 +1,77 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_trx": [
+      {
+        "pymt_master_id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT190561102865",
+        "customer_ref": "190561102865",
+        "debit_acct_no": "010800001900",
+        "debit_acct_ccy": "IDR",
+        "sender_name": "ALIASNAME1 101",
+        "bene_acct_no": "010800003021",
+        "bene_acct_ccy": "IDR",
+        "value_date": "2019-05-25",
+        "amount": "10000.99",
+        "amount_ccy": "IDR",
+        "trx_status": "101",
+		"trx_source": "MN",
+        "version": "1"
+      },
+	  {
+        "pymt_master_id": "21d3ccff-94cc-4293-8132-068b17c65a31",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT190561102865",
+        "customer_ref": "290561102865",
+        "debit_acct_no": "210800001900",
+        "debit_acct_ccy": "IDR",
+        "sender_name": "ALIASNAME2 202",
+        "bene_acct_no": "210800003021",
+        "bene_acct_ccy": "IDR",
+        "value_date": "2019-05-25",
+        "amount": "20000.99",
+        "amount_ccy": "IDR",
+        "trx_status": "202",
+		"trx_source": "MN",
+        "version": "1"
+      },
+	  {
+        "pymt_master_id": "31d3ccff-94cc-4293-8132-068b17c65a31",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT190561102865",
+        "customer_ref": "390561102865",
+        "debit_acct_no": "310800001900",
+        "debit_acct_ccy": "MYR",
+        "sender_name": "ALIASNAME3 303",
+        "bene_acct_no": "310800003021",
+        "bene_acct_ccy": "MYR",
+        "value_date": "2019-05-25",
+        "amount": "15.01",
+        "amount_ccy": "MYR",
+        "trx_status": "303",
+		"trx_source": "MN",
+        "version": "1"
+      },
+	  {
+        "pymt_master_id": "41d3ccff-94cc-4293-8132-068b17c65a31",
+        "prod_cd": "IFT",
+        "bank_ref": "BVIFT490561102865",
+        "customer_ref": "490561102865",
+        "debit_acct_no": "410800001900",
+        "debit_acct_ccy": "USD",
+        "sender_name": "ALIASNAME4 404",
+        "bene_acct_no": "410800003021",
+        "bene_acct_ccy": "USD",
+        "value_date": "2019-05-25",
+        "amount": "85.00",
+        "amount_ccy": "USD",
+        "trx_status": "404",
+		"trx_source": "MN",
+        "version": "1"
+      }
+    ],
+    "total_rows": "4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_onfx_rate": [
+      {
+        "ccy_code": "USD",
+        "tt_buy_rate": "15530.0000000",
+        "tt_sell_rate": "15730.0000000"
+      },
+      {
+        "ccy_code": "MYR",
+        "tt_buy_rate": "15530.0000000",
+        "tt_sell_rate": "15730.0000000"
+      }
+    ]
+  }
+}

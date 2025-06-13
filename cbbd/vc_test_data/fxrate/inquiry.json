@@ -1,0 +1,22 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_fxrate": [
+      {
+        "ccy_code": "USD",
+        "bank_buy_rate": "14530.0000000",
+        "bank_sell_rate": "14730.0000000",
+        "tt_buy_rate": "15530.0000000",
+        "tt_sell_rate": "15730.0000000"
+      },
+      {
+        "ccy_code": "MYR",
+        "bank_buy_rate": "13530.0000000",
+        "bank_sell_rate": "13730.0000000",
+        "tt_buy_rate": "12530.0000000",
+        "tt_sell_rate": "12730.0000000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+
+
+
+
+	<!-- <bean name="/mcb_api"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="ApiImpl" />
+		<property name="serviceInterface" value="com.silverlake.micb.core.api.ApiInterface" />
+	</bean> -->
+	
+	<bean id="applicationProperties" class="com.silverlake.mleb.mcb.util.PropertiesUtil">
+   		<property name="location" value="classpath:app.properties"/>
+   	</bean>
+	
+	
+	<context:annotation-config/>
+	<context:component-scan base-package="com.silverlake" />
+	
+	<import resource="classpath:META-INF/jpa.xml"/>
+	
+	<bean id="initCache" class="com.silverlake.mleb.mcb.util.EhcacheSession" init-method="initialSession" destroy-method="stopSession" />
+	<bean id="initApp" class="com.silverlake.mleb.mcb.init.InitApp" init-method="initApp" /> 
+	
+	
+	<task:annotation-driven executor="taskExecutor"
+	    scheduler="taskScheduler" />
+	<task:executor id="taskExecutor" pool-size="50" />
+	<task:scheduler id="taskScheduler" pool-size="50" />
+
+	
+	<bean id="mapper" class="org.dozer.DozerBeanMapper">
+	  <property name="mappingFiles">
+	    <list>
+	      <value>dozerBeanMapping.xml</value>            
+	    </list>
+	  </property>
+	  <property name="customFieldMapper" ref="dozerCustomFieldMapper">         
+	  </property>
+	</bean>
+	<bean id="dozerCustomFieldMapper" class="com.silverlake.mleb.mcb.util.HibernateFieldMapper" />
+	
+
+	<bean name="/mcb_api"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="ApiImpl" />
+		<property name="serviceInterface" value="com.silverlake.micb.core.api.ApiInterface" />
+	</bean>
+	
+	
+	<bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+    <!-- does not necessarily have to be the same name as the bean to be exported -->
+    <property name="serviceName" value="mcbApi"/>
+    <property name="service" ref="ApiImpl"/>
+    <property name="serviceInterface" value="com.silverlake.micb.core.api.ApiInterface"/>
+    <!-- defaults to 1099 -->
+    <property name="registryPort" value="${rmi.registryPort}"/>
+	</bean>
+	
+	
+	<!-- <bean id="MainSolutionServices" class="org.springframework.aop.framework.ProxyFactoryBean">
+	    <property name="target">
+	      <ref bean="MiBSolution"/>
+	    </property>
+	    <property name="interceptorNames">
+	      <list>
+	      	<value>SecondSolution</value>
+	      	<value>ThirdSolution</value>
+	      	<value>SevenSolution</value>
+	      	<value>EightSolution</value>
+	      </list>
+	    </property>
+	 </bean> -->
+</beans>

@@ -1,0 +1,10 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "device_id_velis": "dfasdwe213dasdasd123123ads",
+    "message_activation_2": "active success",
+    "sequence_number" : 1,
+    "velis_timestamp": 1251231232
+  }
+}

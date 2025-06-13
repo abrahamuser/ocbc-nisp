@@ -1,0 +1,69 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "accprofile_list": [
+      {
+        "org_cd": "sampleOrg",
+        "role_cd": "sampleRoleCode",
+        "record_id": "sampleRecordID001",
+		"role_desc": "sampleData",
+		"created_by_ucode": "sampleData",
+        "created_by_uname": "sampleData",
+        "created_date": "2020-08-18",
+		"updated_by_ucode": "sampleData",
+        "updated_by_uname": "sampleData",
+        "updated_date": "2020-08-18",
+		"version": 2,
+        "maintenance_type": "sampleData",
+        "auth_status_code": "sampleData",
+		"auth_status": "sampleData",
+        "pending_record_id": "sampleData",
+        "role_id_tmp": "sampleData",
+		"acct_accprofile_list": [
+			{
+				"record_id": "sampleData",
+				"detail_record_id": "sampleData",
+				"account_no": "sampleData",
+				"account_ccy": "sampleData",
+				"account_name": "sampleData",
+				"alias_name": "sampleData",
+				"product_list": [{"product_group":"sampleData","product_code_list":["1","2"]}]
+			}
+		]
+ 
+         
+      },
+	  {
+        "org_cd": "sampleOrg",
+        "role_cd": "sampleRoleCode",
+		"role_desc": "sampleData",
+        "record_id": "sampleRecordID002",
+		"created_by_ucode": "sampleData",
+        "created_by_uname": "sampleData",
+        "created_date": "2020-08-18",
+		"updated_by_ucode": "sampleData",
+        "updated_by_uname": "sampleData",
+        "updated_date": "2020-08-18",
+		"version": 2,
+        "maintenance_type": "sampleData",
+        "auth_status_code": "sampleData",
+		"auth_status": "sampleData",
+        "pending_record_id": "sampleData",
+        "role_id_tmp": "sampleData",
+		"acct_accprofile_list": [
+			{
+				"record_id": "sampleData",
+				"detail_record_id": "sampleData",
+				"account_no": "sampleData",
+				"account_ccy": "sampleData",
+				"account_name": "sampleData",
+				"alias_name": "sampleData",
+				"product_list": [{"product_group":"sampleData","product_code_list":["1","2"]}]
+			}
+		]
+      } 
+    ],
+    "total_records": "2"
+  }
+}

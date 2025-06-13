@@ -1,0 +1,66 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "category_list": [
+      {
+        "category_code": "01",
+        "category_name_en": "First",
+        "category_name_id": "Pertama"
+      },
+      {
+        "category_code": "02",
+        "category_name_en": "Second",
+        "category_name_id": "Dua"
+      }
+    ],
+    "resident_status": [
+      {
+        "res_code": "01",
+        "res_name_en": "Resident",
+        "res_name_id": "Penduduk"
+      },
+      {
+        "res_code": "02",
+        "res_name_en": "Non-resident",
+        "res_name_id": "Bukan penduduk"
+      }
+    ],
+    "relationship_status": [
+      {
+        "rel_code": "01",
+        "rel_name_en": "Son",
+        "rel_name_id": "Anak"
+      },
+      {
+        "rel_code": "02",
+        "rel_name_en": "Father",
+        "rel_name_id": "Bapa"
+      }
+    ],
+    "underlying_type": [
+      {
+        "underlying_code": "01",
+        "underlying_name_en": "Underlying 1",
+        "underlying_name_id": "Underlying 1"
+      },
+      {
+        "underlying_code": "02",
+        "underlying_name_en": "Underlying 2",
+        "underlying_name_id": "Underlying 2"
+      }
+    ],
+    "payment_purpose": [
+      {
+        "purpose_code": "01",
+        "purpose_name_en": "Salary",
+        "purpose_name_id": "Gaji"
+      },
+      {
+        "purpose_code": "02",
+        "purpose_name_en": "Saving",
+        "purpose_name_id": "Tabungan"
+      }
+    ]
+  }
+}

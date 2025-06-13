@@ -1,0 +1,12 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "file":
+      {
+        "data": "VGhpcyBpcyBteSB0ZXJtIGFuZCBjb25kaXRpb24=",
+        "mime_type": "text/plain",
+        "file_name": "tncname"
+      }
+  }
+}

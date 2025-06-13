@@ -1,0 +1,64 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_account": [
+      {
+        "id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef12",
+        "org_cd": "CASECASE",
+        "accout_no": "040800002491",
+        "acct_ccy": "IDR",
+        "acct_name": "NAME1 292",
+        "acct_alias": "NAME1 292",
+        "cif_no": "0000000000000000292",
+        "prod_cd_sibs": "GRBIZ01008",
+        "acct_type_sibs": "D",
+        "mcbit": "Y",
+        "balance_available": "500000000.00",
+        "branch_cd_sibs": "05040"
+      },
+      {
+        "id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef13",
+        "org_cd": "CASECASE",
+        "accout_no": "040800002492",
+        "acct_ccy": "IDR",
+        "acct_name": "NAME1 492",
+        "acct_alias": "NAME1 492",
+        "cif_no": "0000000000000000292",
+        "prod_cd_sibs": "GRBIZ01008",
+        "acct_type_sibs": "D",
+        "mcbit": "Y",
+        "balance_available": "500000000.00",
+        "branch_cd_sibs": "05040"
+      },
+      {
+        "id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef14",
+        "org_cd": "CASECASE",
+        "accout_no": "040800005432",
+        "acct_ccy": "USD",
+        "acct_name": "NAME1 432",
+        "acct_alias": "NAME1 432",
+        "cif_no": "0000000000000000292",
+        "prod_cd_sibs": "GRBIZ01008",
+        "acct_type_sibs": "D",
+        "mcbit": "Y",
+        "balance_available": "100000.00",
+        "branch_cd_sibs": "05040"
+      },
+      {
+        "id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef15",
+        "org_cd": "CASECASE",
+        "accout_no": "040800005433",
+        "acct_ccy": "USD",
+        "acct_name": "NAME1 433",
+        "acct_alias": "NAME1 433",
+        "cif_no": "0000000000000000292",
+        "prod_cd_sibs": "GRBIZ01008",
+        "acct_type_sibs": "D",
+        "mcbit": "Y",
+        "balance_available": "100000.00",
+        "branch_cd_sibs": "05040"
+      }
+    ]
+  }
+}

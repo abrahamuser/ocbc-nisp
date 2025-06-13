@@ -1,0 +1,26 @@
+{
+  "response_code": "0000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "list_account": [
+      {
+        "id": "6d624a5a-8a7a-4bdc-b46d-411d0440ef12",
+        "org_cd": "CASECASE",
+        "acct_no": "040800002491",
+        "acct_ccy": "IDR",
+        "acct_name": "NAME1 292",
+        "acct_alias": "NAME1 292",
+        "cif_no": "0000000000000000292",
+        "prod_cd_sibs": "GRBIZ01008",
+        "acct_type_sibs": "D",
+        "mcbit": "Y",
+        "branch_cd_sibs": "05040",
+        "balance_available": "1726038081122.46",
+        "balance_ledger": "1726038881122.46",
+        "balance_hold": "0.00",
+        "balance_overdraft": "0.00"
+      }
+    ],
+    "total_rows": "1"
+  }
+}

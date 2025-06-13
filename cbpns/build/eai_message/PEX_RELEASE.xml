@@ -1,0 +1,31 @@
+<Msg>
+<Header>
+        <SC_TransType>620020</SC_TransType>
+        <SC_ApplName>IBKH</SC_ApplName>
+        <SC_ApplID>IBKH</SC_ApplID>
+        <SC_ApplTransID>%APPTRANSID%</SC_ApplTransID>
+        <SC_TransDate>%TRANSDATE%</SC_TransDate>
+        <SC_TransTime>%TRANSTIME%</SC_TransTime>
+        <SC_TransUserID>%TRANSUSERID%</SC_TransUserID>
+        <SC_TransUserInfo>%TRANSUSERINFO%</SC_TransUserInfo>
+        <SC_ApplUserID>%APPUSERID%</SC_ApplUserID>
+		<SC_TellerID>%TELLERID%</SC_TellerID>
+		<SC_BranchCode>%BRANCHCODE%</SC_BranchCode>
+		<SC_CtrlUnit>%CTRLUNIT%</SC_CtrlUnit>
+		<SC_ECFlag>%ECFLAG%</SC_ECFlag>
+</Header>
+<Body><PEX_RELEASE>
+<Request>
+<JournalSequence>%JOURNALSEQUENCE_6%</JournalSequence>
+<OriJnlSeq>%ORIJNLSEQ_9%</OriJnlSeq>
+<DebitingAccount>%DEBACC_19%</DebitingAccount>
+<DebAccType>%DEBACCTYPE_1%</DebAccType>
+<Amount>%AMOUNT_17_2%</Amount>
+<CreditingAccount>%CREDACC_19%</CreditingAccount>
+<CreAccType>%CREACCTYPE_1%</CreAccType>
+<SeqNo>%SEQNO_19%</SeqNo>
+<CreditAccCurr>%CREDACCCURR_4%</CreditAccCurr>
+<DebitAccCurr>%DEBACCCURR_4%</DebitAccCurr>
+</Request>
+</PEX_RELEASE></Body>
+</Msg>

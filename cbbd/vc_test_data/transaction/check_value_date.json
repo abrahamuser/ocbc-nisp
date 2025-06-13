@@ -1,0 +1,10 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "is_backdated": "N",
+    "is_cot": "N",
+    "is_holiday": "N",
+    "next_value_date": "2020-07-01"
+  }
+}

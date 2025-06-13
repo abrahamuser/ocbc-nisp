@@ -1,0 +1,84 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "recurring_list": [
+      {
+        "recurring_id": "813557A16165F0F7E050A8C0940764CC",
+		"prod_cd": "LLG",
+		"reference_id":"12323",
+		"debit_acct_no":"123123123123",
+		"debit_acct_ccy":"usd",
+		"debit_acct_name":"dun ask me",
+		"debit_acct_alias":"dun ask me",
+		"bene_acct_no" : "3333333333",
+		"bene_acct_ccy" : "IDR",
+		"bene_acct_name" : "ask yourself",
+		"bene_bank_name" : "ask yourself",
+		"billing_id" : "23321312",
+		"biller_code" : "1231313",
+		"biller_name" : "ask yourself",
+		"amount" : "22222",
+		"amount_ccy" : "IDR",
+		"next_value_date" : "2019-02-31",
+		"recurring_type" : "D0",
+		"recurring_value" : "1",
+		"recurring_start" : "2019-02-31",
+		"recurring_end" : "2019-02-31"
+ 
+		
+         
+      },
+	  {
+        "recurring_id": "213557A16165F0F7E050A8C0940764CC",
+		"prod_cd": "STMT",
+		"reference_id":"12342",
+		"debit_acct_no":"123123123123",
+		"debit_acct_ccy":"usd",
+		"debit_acct_name":"dun ask me",
+		"debit_acct_alias":"dun ask me",
+		"bene_acct_no" : "3333333333",
+		"bene_acct_ccy" : "IDR",
+		"bene_acct_name" : "ask yourself",
+		"bene_bank_name" : "ask yourself",
+		"billing_id" : "23321312",
+		"biller_code" : "1231313",
+		"biller_name" : "ask yourself",
+		"amount" : "22222",
+		"amount_ccy" : "IDR",
+		"next_value_date" : "2019-02-31",
+		"recurring_type" : "D0",
+		"recurring_value" : "1",
+		"recurring_start" : "2019-02-31",
+		"recurring_end" : "2019-02-31"
+         
+      },
+	  {
+        "recurring_id": "313557A16165F0F7E050A8C0940764CC",
+		"prod_cd": "OLG",
+		"reference_id":"23323",
+		"debit_acct_no":"123123123123",
+		"debit_acct_ccy":"usd",
+		"debit_acct_name":"dun ask me",
+		"debit_acct_alias":"dun ask me",
+		"bene_acct_no" : "3333333333",
+		"bene_acct_ccy" : "IDR",
+		"bene_acct_name" : "ask yourself",
+		"bene_bank_name" : "ask yourself",
+		"billing_id" : "23321312",
+		"biller_code" : "1231313",
+		"biller_name" : "ask yourself",
+		"amount" : "22222",
+		"amount_ccy" : "IDR",
+		"next_value_date" : "2019-02-31",
+		"recurring_type" : "D0",
+		"recurring_value" : "1",
+		"recurring_start" : "2019-02-31",
+		"recurring_end" : "2019-02-31"
+         
+      } 	  
+	   
+    ],
+    "total_rows": "3"
+  }
+}

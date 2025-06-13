@@ -1,0 +1,15 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "authpol_result_list": [
+      {
+        "pending_record_id": "11d3ccff-94cc-4293-8132-068b17c65a31",
+        "action_code": "IFT",
+        "result_status_cd": "00000",
+        "result_status_desc": "" 
+      } 
+    ]
+
+  }
+}

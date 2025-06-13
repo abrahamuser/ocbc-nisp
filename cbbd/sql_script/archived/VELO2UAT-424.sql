@@ -1,0 +1,2 @@
+UPDATE mleb_mcb.generalcode SET gncode_description = 'Ya, Bagikan penerima untuk pengguna lain' WHERE gncode_type='BENE_SHARED_OPTION_IN' and gncode = 'Y';
+UPDATE mleb_mcb.generalcode SET gncode_description = 'Tidak, Jangan bagikan penerima untuk pengguna lain' WHERE gncode_type='BENE_SHARED_OPTION_IN' and gncode = 'N';

@@ -1,0 +1,23 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+        "prod_cd": "IFT",
+		"bene_name": "bene name",
+		"nick_name": "bene nick name",
+		"email_address": "bene@mail.com",
+		"phone_number": "0126666666",
+        "account_number": "040800002491",
+        "account_currency": "IDR",
+		"bene_address1": "address 1",
+		"bene_address2": "address 2",
+		"bene_address3": "address 3",
+		"bank_country_code": "ID",
+        "bank_code": "012",
+		"bank_city": "bank city",
+        "bank_name": "Bank Nation",
+        "bank_network_clearing_code": "12345",
+        "is_shared": "Y",
+		"is_favorite": "Y"
+  }
+}

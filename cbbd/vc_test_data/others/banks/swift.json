@@ -1,0 +1,21 @@
+{
+  "response_code": "00000",
+  "response_desc": "SUCCESS",
+  "data": {
+    "bank_info": 
+      {
+        "bank_code": "012",
+        "bank_name": "CIMB Bank",
+        "branch_name": "Kuala Lumpur",
+        "address_1": "street 1",
+        "address_2": "street 2",
+        "address_3": "street 3",
+        "country_code": "MYS",
+        "province_code": "54100",
+        "city_code": "1222",
+        "city_name": "city name",
+        "network_clearing_code": "ABC1234"
+      },
+    "total_rows": 5
+  }
+}
